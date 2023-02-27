@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33328.57
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dairy Farm Management System", "Dairy Farm Management System.csproj", "{777754CD-09C5-479E-A7F6-40253E4B5BAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{777754CD-09C5-479E-A7F6-40253E4B5BAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{777754CD-09C5-479E-A7F6-40253E4B5BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{777754CD-09C5-479E-A7F6-40253E4B5BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{777754CD-09C5-479E-A7F6-40253E4B5BAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1203AF8A-4466-4D05-8C3B-13C127CE387B}
+	EndGlobalSection
+EndGlobal
