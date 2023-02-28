@@ -80,6 +80,12 @@
     <Compile Include="MilkProduction.Designer.cs">
       <DependentUpon>MilkProduction.cs</DependentUpon>
     </Compile>
+    <Compile Include="MilkSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MilkSales.Designer.cs">
+      <DependentUpon>MilkSales.cs</DependentUpon>
+    </Compile>
     <Compile Include="Splash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MilkProduction.resx">
       <DependentUpon>MilkProduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MilkSales.resx">
+      <DependentUpon>MilkSales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
