@@ -49,6 +49,7 @@ namespace Dairy_Farm_Management_System
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Segoe Print", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(178, 23);
             this.label1.Name = "label1";
@@ -58,7 +59,7 @@ namespace Dairy_Farm_Management_System
             // 
             // bunifuProgressBar1
             // 
-            this.bunifuProgressBar1.BackColor = System.Drawing.Color.Silver;
+            this.bunifuProgressBar1.BackColor = System.Drawing.Color.White;
             this.bunifuProgressBar1.BorderRadius = 5;
             this.bunifuProgressBar1.Location = new System.Drawing.Point(2, 339);
             this.bunifuProgressBar1.MaximumValue = 100;
@@ -72,7 +73,7 @@ namespace Dairy_Farm_Management_System
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.BackColor = System.Drawing.Color.LightSlateGray;
             this.ClientSize = new System.Drawing.Size(640, 351);
             this.Controls.Add(this.bunifuProgressBar1);
             this.Controls.Add(this.label1);
