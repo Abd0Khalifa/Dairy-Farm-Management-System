@@ -65,5 +65,25 @@ namespace Dairy_Farm_Management_System
             obj.Show();
             this.Hide();
         }
+
+        private void Breedings_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuMaterialTextbox7_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuMaterialTextbox3_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
