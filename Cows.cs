@@ -17,11 +17,24 @@ namespace Dairy_Farm_Management_System
         public Cows()
         {
             InitializeComponent();
+            populate();
+
         }
 
         SqlConnection con = new SqlConnection(@"Data Source=
         (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\defds\Documents\DailyFarmDB.mdf;Integrated Security=True;Connect Timeout=30");
 
+        private void populate()
+        {
+            con.Open();
+            string Query = "select * from CowTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            CowDGV.DataSource = ds.Tables[0];
+            con.Close();
+        }
         private void label18_Click(object sender, EventArgs e)
         {
             Cows obj = new Cows();
