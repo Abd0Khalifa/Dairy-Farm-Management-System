@@ -70,5 +70,46 @@ namespace Dairy_Farm_Management_System
             obj.Show();
             this.Hide();
         }
+
+        private void DOFDate_ValueChanged(object sender, EventArgs e)
+        {
+            age = Convert.ToInt32((DateTime.Today.Date - DOFDate.Value.Date).Days) / 365;
+        }
+        int age = 0;
+        private void SaveBtn_Click(object sender, EventArgs e)
+        {
+            if (CowNameTb.Text == "" || EarTagTb.Text == "" || ColorTb.Text == "" || BreedTb.Text == "" || WeigtTb.Text == "" || AgeTb.Text == "" || PastureTb.Text == "")
+            {
+                MessageBox.Show("Missing Data");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "insert into CowTbl values('" + CowNameTb.Text + "','" + EarTagTb.Text + "','" + ColorTb.Text + "','" + BreedTb.Text + "'," + age + "," + WeigtTb.Text + ", '" + PastureTb.Text + "')";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Cow Saved");
+                    con.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void DOFDate_MouseLeave(object sender, EventArgs e)
+        {
+            age = Convert.ToInt32((DateTime.Today.Date - DOFDate.Value.Date).Days) / 365;
+            AgeTb.Text = "" + age;
+        }
+
+        private void DOFDate_MarginChanged(object sender, EventArgs e)
+        {
+            age = Convert.ToInt32((DateTime.Today.Date - DOFDate.Value.Date).Days) / 365;
+            AgeTb.Text = "" + age;
+        }
     }
 }
