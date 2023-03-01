@@ -105,6 +105,8 @@ namespace Dairy_Farm_Management_System
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Cow Saved");
                     con.Close();
+                    populate();
+                    Clear();
                 }
                 catch (Exception ex)
                 {
@@ -123,6 +125,21 @@ namespace Dairy_Farm_Management_System
         {
             age = Convert.ToInt32((DateTime.Today.Date - DOFDate.Value.Date).Days) / 365;
             AgeTb.Text = "" + age;
+        }
+
+        private void Clear()
+        {
+            CowNameTb.Text = "";
+            EarTagTb.Text = "";
+            ColorTb.Text = "";
+            AgeTb.Text = "";
+            WeigtTb.Text = "";
+            PastureTb.Text = "";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Clear();
         }
     }
 }
