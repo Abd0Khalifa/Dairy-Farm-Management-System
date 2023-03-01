@@ -79,7 +79,7 @@ namespace Dairy_Farm_Management_System
             this.CowDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label14 = new System.Windows.Forms.Label();
             this.SaveBtn = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.EditBtn = new System.Windows.Forms.Button();
             this.DeleteBtn = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
@@ -712,18 +712,19 @@ namespace Dairy_Farm_Management_System
             this.SaveBtn.UseVisualStyleBackColor = false;
             this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
-            // button2
+            // EditBtn
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(541, 287);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(124, 42);
-            this.button2.TabIndex = 29;
-            this.button2.Text = "Edit";
-            this.button2.UseVisualStyleBackColor = false;
+            this.EditBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.EditBtn.FlatAppearance.BorderSize = 0;
+            this.EditBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.EditBtn.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditBtn.Location = new System.Drawing.Point(541, 287);
+            this.EditBtn.Name = "EditBtn";
+            this.EditBtn.Size = new System.Drawing.Size(124, 42);
+            this.EditBtn.TabIndex = 29;
+            this.EditBtn.Text = "Edit";
+            this.EditBtn.UseVisualStyleBackColor = false;
+            this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
             // DeleteBtn
             // 
@@ -806,7 +807,7 @@ namespace Dairy_Farm_Management_System
             this.Controls.Add(this.label20);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.DeleteBtn);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.EditBtn);
             this.Controls.Add(this.SaveBtn);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.CowDGV);
@@ -891,7 +892,7 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button SaveBtn;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button EditBtn;
         private System.Windows.Forms.Button DeleteBtn;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel8;
