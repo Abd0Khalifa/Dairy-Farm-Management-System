@@ -103,6 +103,20 @@ namespace Dairy_Farm_Management_System
             PmTb.Text = "";
             TotalTb.Text = "";
         }
+        private void GetCowName()
+        {
+            con.Open();
+            string query = "select * from CowTbl Where CowId=" + CowIdCb.SelectedValue.ToString() + "";
+            SqlCommand cmd = new SqlCommand(query, con);
+            DataTable dt = new DataTable();
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            sda.Fill(dt);
+            foreach (DataRow dr in dt.Rows)
+            {
+                CowNameTb.Text = dr["CowName"].ToString();
+            }
+            con.Close();
+        }
         private void SaveBtn_Click(object sender, EventArgs e)
         {
             if (CowIdCb.SelectedIndex == -1 || CowNameTb.Text == "" || AmTb.Text == "" || PmTb.Text == "" || NoonTb.Text == "" || TotalTb.Text == "")
@@ -132,6 +146,11 @@ namespace Dairy_Farm_Management_System
         private void ClearBtn_Click(object sender, EventArgs e)
         {
             Clear();
+        }
+
+        private void CowIdCb_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            GetCowName();
         }
     }
 }
