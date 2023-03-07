@@ -190,7 +190,24 @@ namespace Dairy_Farm_Management_System
             {
                 MessageBox.Show("Missing Data");
             }
-            
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "delete from MilkTbl where MId= " + key + ";";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Producet Deleted");
+                    con.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
