@@ -218,7 +218,21 @@ namespace Dairy_Farm_Management_System
             }
             else
             {
-
+                try
+                {
+                    con.Open();
+                    string Query = "update MilkTbl set CowName='" + CowNameTb.Text + "', AmMilk= " + AmTb.Text + ",NoonMilk=" + NoonTb.Text + ",PmMilk=" + PmTb.Text + ",TotalMilk=" + TotalTb.Text + ",DateProdo='" + Date.Value.Date + "' where MId=" + key + " ;";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Product Updated");
+                    con.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         
         }
