@@ -17,13 +17,23 @@ namespace Dairy_Farm_Management_System
         public MilkProduction()
         {
             InitializeComponent();
+            FillCowId();
         }
         SqlConnection con = new SqlConnection(@"Data Source=
         (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\defds\Documents\DailyFarmDB.mdf;Integrated Security=True;Connect Timeout=30");
 
         private void FillCowId()
         {
-           
+            con.Open();
+            SqlCommand cmd = new SqlCommand("select CowId from CowsTbl", con);
+            SqlDataReader Rdr;
+            Rdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("CowIdCb", typeof(int));
+            dt.Load(Rdr);
+            CowIdCb.ValueMember = "CowId";
+            CowIdCb.DataSource = dt;
+            con.Close();
         }
         private void label18_Click(object sender, EventArgs e)
         {
