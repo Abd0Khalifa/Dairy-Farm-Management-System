@@ -102,6 +102,24 @@ namespace Dairy_Farm_Management_System
             {
                 MessageBox.Show("Missing Data");
             }
-            
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "insert into MilkTbl values(" + CowIdCb.SelectedValue.ToString() + ",'" + CowNameTb.Text + "'," + AmTb.Text + "," + NoonTb.Text + "," + PmTb.Text + "," + TotalTb.Text + ", '" + Date.Value.Date + "')";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Milk Saved");
+                    con.Close();
+                    populate();
+                    //Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }
