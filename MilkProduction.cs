@@ -163,5 +163,25 @@ namespace Dairy_Farm_Management_System
             int total = Convert.ToInt32(AmTb.Text) + Convert.ToInt32(PmTb.Text) + Convert.ToInt32(NoonTb.Text);
             TotalTb.Text = "" + total;
         }
+        int key = 0;
+        private void MilkDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            CowIdCb.SelectedValue = MilkDGV.SelectedRows[0].Cells[1].Value.ToString();
+            CowNameTb.Text = MilkDGV.SelectedRows[0].Cells[2].Value.ToString();
+            AmTb.Text = MilkDGV.SelectedRows[0].Cells[3].Value.ToString();
+            NoonTb.Text = MilkDGV.SelectedRows[0].Cells[4].Value.ToString();
+            PmTb.Text = MilkDGV.SelectedRows[0].Cells[5].Value.ToString();
+            TotalTb.Text = MilkDGV.SelectedRows[0].Cells[6].Value.ToString();
+            Date.Text = MilkDGV.SelectedRows[0].Cells[7].Value.ToString();
+            if (CowNameTb.Text == "")
+            {
+                key = 0;
+
+            }
+            else
+            {
+                key = Convert.ToInt32(MilkDGV.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
     }
 }
