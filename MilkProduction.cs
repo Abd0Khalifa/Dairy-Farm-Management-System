@@ -19,6 +19,7 @@ namespace Dairy_Farm_Management_System
             InitializeComponent();
             FillCowId();
             populate();
+            Clear();
         }
         SqlConnection con = new SqlConnection(@"Data Source=
         (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\defds\Documents\DailyFarmDB.mdf;Integrated Security=True;Connect Timeout=30");
@@ -95,7 +96,13 @@ namespace Dairy_Farm_Management_System
             obj.Show();
             this.Hide();
         }
-
+        private void Clear()
+        {
+            CowNameTb.Text = "";
+            AmTb.Text = "";
+            PmTb.Text = "";
+            TotalTb.Text = "";
+        }
         private void SaveBtn_Click(object sender, EventArgs e)
         {
             if (CowIdCb.SelectedIndex == -1 || CowNameTb.Text == "" || AmTb.Text == "" || PmTb.Text == "" || NoonTb.Text == "" || TotalTb.Text == "")
@@ -113,7 +120,7 @@ namespace Dairy_Farm_Management_System
                     MessageBox.Show("Milk Saved");
                     con.Close();
                     populate();
-                    //Clear();
+                    Clear();
                 }
                 catch (Exception ex)
                 {
