@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace Dairy_Farm_Management_System
 {
@@ -16,7 +18,8 @@ namespace Dairy_Farm_Management_System
         {
             InitializeComponent();
         }
-
+        SqlConnection con = new SqlConnection(@"Data Source=
+        (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\defds\Documents\DailyFarmDB.mdf;Integrated Security=True;Connect Timeout=30");
         private void label18_Click(object sender, EventArgs e)
         {
             Cows obj = new Cows();
@@ -64,6 +67,11 @@ namespace Dairy_Farm_Management_System
             Dashboard obj = new Dashboard();
             obj.Show();
             this.Hide();
+        }
+
+        private void SaveBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
