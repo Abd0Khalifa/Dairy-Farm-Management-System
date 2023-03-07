@@ -98,7 +98,10 @@ namespace Dairy_Farm_Management_System
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-
-        }
+            if (CowIdCb.SelectedIndex == -1 || CowNameTb.Text == "" || AmTb.Text == "" || PmTb.Text == "" || NoonTb.Text == "" || TotalTb.Text == "")
+            {
+                MessageBox.Show("Missing Data");
+            }
+            
     }
 }
