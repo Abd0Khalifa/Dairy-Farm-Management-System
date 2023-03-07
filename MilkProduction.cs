@@ -18,6 +18,7 @@ namespace Dairy_Farm_Management_System
         {
             InitializeComponent();
             FillCowId();
+            populate();
         }
         SqlConnection con = new SqlConnection(@"Data Source=
         (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\defds\Documents\DailyFarmDB.mdf;Integrated Security=True;Connect Timeout=30");
@@ -33,6 +34,17 @@ namespace Dairy_Farm_Management_System
             dt.Load(Rdr);
             CowIdCb.ValueMember = "CowId";
             CowIdCb.DataSource = dt;
+            con.Close();
+        }
+        private void populate()
+        {
+            con.Open();
+            string Query = "select * from MilkTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            MilkDGV.DataSource = ds.Tables[0];
             con.Close();
         }
         private void label18_Click(object sender, EventArgs e)
