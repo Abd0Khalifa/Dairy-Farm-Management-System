@@ -222,5 +222,13 @@ namespace Dairy_Farm_Management_System
                 }
             }
         }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            if (CowIdCb.SelectedIndex == -1 || CowNameTb.Text == "" || CowAgeTb.Text == "" || RemarkesTb.Text == "")
+            {
+                MessageBox.Show("Select Breed");
+            }
+        }
     }
 }
