@@ -35,6 +35,20 @@ namespace Dairy_Farm_Management_System
             CowIdCb.DataSource = dt;
             con.Close();
         }
+        private void GetCowName()
+        {
+            con.Open();
+            string query = "select * from CowTbl Where CowId=" + CowIdCb.SelectedValue.ToString() + "";
+            SqlCommand cmd = new SqlCommand(query, con);
+            DataTable dt = new DataTable();
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            sda.Fill(dt);
+            foreach (DataRow dr in dt.Rows)
+            {
+                CowNameTb.Text = dr["CowName"].ToString();
+            }
+            con.Close();
+        }
         private void label6_Click(object sender, EventArgs e)
         {
             CowHealth obj = new CowHealth();
