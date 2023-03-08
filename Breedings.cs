@@ -17,6 +17,7 @@ namespace Dairy_Farm_Management_System
         {
             InitializeComponent();
             FillCowId();
+            populate();
         }
 
         SqlConnection con = new SqlConnection(@"Data Source=
@@ -32,6 +33,17 @@ namespace Dairy_Farm_Management_System
             dt.Load(Rdr);
             CowIdCb.ValueMember = "CowId";
             CowIdCb.DataSource = dt;
+            con.Close();
+        }
+        private void populate()
+        {
+            con.Open();
+            string Query = "select * from BreedTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            BreedingDGV.DataSource = ds.Tables[0];
             con.Close();
         }
         private void label18_Click(object sender, EventArgs e)
