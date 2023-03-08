@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace Dairy_Farm_Management_System
@@ -16,6 +17,9 @@ namespace Dairy_Farm_Management_System
         {
             InitializeComponent();
         }
+
+        SqlConnection con = new SqlConnection(@"Data Source=
+        (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\defds\Documents\DailyFarmDB.mdf;Integrated Security=True;Connect Timeout=30");
 
         private void label18_Click(object sender, EventArgs e)
         {
@@ -82,6 +86,11 @@ namespace Dairy_Farm_Management_System
         }
 
         private void bunifuMaterialTextbox3_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SaveBtn_Click(object sender, EventArgs e)
         {
 
         }
