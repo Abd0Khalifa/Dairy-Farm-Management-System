@@ -46,7 +46,6 @@ namespace Dairy_Farm_Management_System
             BreedingDGV.DataSource = ds.Tables[0];
             con.Close();
         }
-        String CowAge;
         private void GetCowName()
         {
             con.Open();
@@ -58,7 +57,7 @@ namespace Dairy_Farm_Management_System
             foreach (DataRow dr in dt.Rows)
             {
                 CowNameTb.Text = dr["CowName"].ToString();
-                CowAge = dr["Age"].ToString();
+                CowAgeTb.Text = dr["Age"].ToString();
             }
 
             con.Close();
