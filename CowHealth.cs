@@ -135,6 +135,16 @@ namespace Dairy_Farm_Management_System
                 }
             }
         }
+        private void Clear()
+        {
+            CowNameTb.Text = "";
+            EventTb.Text = "";
+            DiagnosisTb.Text = "";
+            VetNameTb.Text = "";
+            CostTb.Text = "";
+            TreatmentTb.Text = "";
+
+        }
 
         private void CowIdCb_SelectionChangeCommitted(object sender, EventArgs e)
         {
