@@ -151,5 +151,10 @@ namespace Dairy_Farm_Management_System
         {
             GetCowName();
         }
+
+        private void ClearBtn_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
     }
 }
