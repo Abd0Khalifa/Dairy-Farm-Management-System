@@ -197,6 +197,11 @@ namespace Dairy_Farm_Management_System
                     populate();
                     Clear();
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
