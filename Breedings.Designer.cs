@@ -33,7 +33,7 @@ namespace Dairy_Farm_Management_System
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.button3 = new System.Windows.Forms.Button();
+            this.DeleteBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -57,9 +57,9 @@ namespace Dairy_Farm_Management_System
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ClearBtn = new System.Windows.Forms.Button();
+            this.EditBtn = new System.Windows.Forms.Button();
+            this.SaveBtn = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.BreedingDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.CowAgeTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -105,18 +105,18 @@ namespace Dairy_Farm_Management_System
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button3
+            // DeleteBtn
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(704, 310);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(124, 36);
-            this.button3.TabIndex = 55;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
+            this.DeleteBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.DeleteBtn.FlatAppearance.BorderSize = 0;
+            this.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeleteBtn.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteBtn.Location = new System.Drawing.Point(704, 310);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(124, 36);
+            this.DeleteBtn.TabIndex = 55;
+            this.DeleteBtn.Text = "Delete";
+            this.DeleteBtn.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -358,44 +358,44 @@ namespace Dairy_Farm_Management_System
             this.label20.TabIndex = 57;
             this.label20.Text = "Cow Breeding";
             // 
-            // button4
+            // ClearBtn
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(868, 310);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(124, 36);
-            this.button4.TabIndex = 56;
-            this.button4.Text = "Update";
-            this.button4.UseVisualStyleBackColor = false;
+            this.ClearBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClearBtn.FlatAppearance.BorderSize = 0;
+            this.ClearBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ClearBtn.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClearBtn.Location = new System.Drawing.Point(868, 310);
+            this.ClearBtn.Name = "ClearBtn";
+            this.ClearBtn.Size = new System.Drawing.Size(124, 36);
+            this.ClearBtn.TabIndex = 56;
+            this.ClearBtn.Text = "Clear";
+            this.ClearBtn.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // EditBtn
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(541, 310);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(124, 36);
-            this.button2.TabIndex = 54;
-            this.button2.Text = "Edit";
-            this.button2.UseVisualStyleBackColor = false;
+            this.EditBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.EditBtn.FlatAppearance.BorderSize = 0;
+            this.EditBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.EditBtn.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditBtn.Location = new System.Drawing.Point(541, 310);
+            this.EditBtn.Name = "EditBtn";
+            this.EditBtn.Size = new System.Drawing.Size(124, 36);
+            this.EditBtn.TabIndex = 54;
+            this.EditBtn.Text = "Edit";
+            this.EditBtn.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // SaveBtn
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(385, 310);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 36);
-            this.button1.TabIndex = 53;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
+            this.SaveBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.SaveBtn.FlatAppearance.BorderSize = 0;
+            this.SaveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SaveBtn.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveBtn.Location = new System.Drawing.Point(385, 310);
+            this.SaveBtn.Name = "SaveBtn";
+            this.SaveBtn.Size = new System.Drawing.Size(124, 36);
+            this.SaveBtn.TabIndex = 53;
+            this.SaveBtn.Text = "Save";
+            this.SaveBtn.UseVisualStyleBackColor = false;
             // 
             // label14
             // 
@@ -749,11 +749,11 @@ namespace Dairy_Farm_Management_System
             this.Controls.Add(this.ExcpectedDate);
             this.Controls.Add(this.BreedDate);
             this.Controls.Add(this.HeatDate);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ClearBtn);
+            this.Controls.Add(this.EditBtn);
+            this.Controls.Add(this.SaveBtn);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.BreedingDGV);
             this.Controls.Add(this.CowAgeTb);
@@ -808,7 +808,7 @@ namespace Dairy_Farm_Management_System
 
         #endregion
 
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button DeleteBtn;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
@@ -832,9 +832,9 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ClearBtn;
+        private System.Windows.Forms.Button EditBtn;
+        private System.Windows.Forms.Button SaveBtn;
         private System.Windows.Forms.Label label14;
         private Guna.UI2.WinForms.Guna2DataGridView BreedingDGV;
         private Bunifu.Framework.UI.BunifuMaterialTextbox CowAgeTb;
