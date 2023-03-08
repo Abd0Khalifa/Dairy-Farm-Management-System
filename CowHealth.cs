@@ -17,6 +17,7 @@ namespace Dairy_Farm_Management_System
         {
             InitializeComponent();
             FillCowId();
+            populate();
         }
 
         SqlConnection con = new SqlConnection(@"Data Source=
@@ -47,6 +48,17 @@ namespace Dairy_Farm_Management_System
             {
                 CowNameTb.Text = dr["CowName"].ToString();
             }
+            con.Close();
+        }
+        private void populate()
+        {
+            con.Open();
+            string Query = "select * from HealthTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            HealtDGV.DataSource = ds.Tables[0];
             con.Close();
         }
         private void label6_Click(object sender, EventArgs e)
