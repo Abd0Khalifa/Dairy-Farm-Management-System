@@ -61,6 +61,14 @@ namespace Dairy_Farm_Management_System
 
             con.Close();
         }
+        private void Clear()
+        {
+            CowIdCb.SelectedIndex = -1;
+            CowNameTb.Text = "";
+            CowAgeTb.Text = "";
+            RemarkesTb.Text = "";
+            key = 0;
+        }
         private void label18_Click(object sender, EventArgs e)
         {
             Cows obj = new Cows();
@@ -138,6 +146,12 @@ namespace Dairy_Farm_Management_System
         private void CowIdCb_SelectionChangeCommitted(object sender, EventArgs e)
         {
             GetCowName();
+        }
+
+        int key = 0;
+        private void BreedingDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
