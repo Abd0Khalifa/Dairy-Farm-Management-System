@@ -173,14 +173,15 @@ namespace Dairy_Farm_Management_System
         int key = 0;
         private void BreedingDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            CowIdCb.SelectedValue = BreedingDGV.SelectedRows[0].Cells[1].Value.ToString();
-            CowNameTb.Text = BreedingDGV.SelectedRows[0].Cells[2].Value.ToString();
-            HeatDate.Text = BreedingDGV.SelectedRows[0].Cells[3].Value.ToString();
-            BreedDate.Text = BreedingDGV.SelectedRows[0].Cells[4].Value.ToString();
+            HeatDate.Text = BreedingDGV.SelectedRows[0].Cells[1].Value.ToString();
+            BreedDate.Text = BreedingDGV.SelectedRows[0].Cells[2].Value.ToString();
+            CowIdCb.SelectedValue = BreedingDGV.SelectedRows[0].Cells[3].Value.ToString();
+            CowNameTb.Text = BreedingDGV.SelectedRows[0].Cells[4].Value.ToString();
             PregancyDate.Text = BreedingDGV.SelectedRows[0].Cells[5].Value.ToString();
             ExcpectedDate.Text = BreedingDGV.SelectedRows[0].Cells[6].Value.ToString();
             CalvedDate.Text = BreedingDGV.SelectedRows[0].Cells[7].Value.ToString();
-            RemarkesTb.Text = BreedingDGV.SelectedRows[0].Cells[7].Value.ToString();
+            CowAgeTb.Text = BreedingDGV.SelectedRows[0].Cells[8].Value.ToString();
+            RemarkesTb.Text = BreedingDGV.SelectedRows[0].Cells[9].Value.ToString();
             if (CowNameTb.Text == "")
             {
                 key = 0;
@@ -234,7 +235,7 @@ namespace Dairy_Farm_Management_System
                 try
                 {
                     con.Open();
-                    string Query = "update BreedTbl set HeatDate='" + HeatDate.Value.Date + "',BreedDate= " + BreedDate.Value.Date + ",CowId=" + CowIdCb.SelectedValue.ToString() + ",CowName=" + CowNameTb.Text + ",PregDate=" + PregancyDate.Value.Date + ",ExpDateCalve='" + ExcpectedDate.Value.Date + ",DateCalved='" + CalvedDate.Value.Date + ",CowAge='" + CowAgeTb.Text + ",Remarks='" + RemarkesTb.Text + "' where BrId=" + key + " ;";
+                    string Query = "update BreedTbl set HeatDate='" + HeatDate.Value.Date + "',BreedDate= '" + BreedDate.Value.Date + "',CowId='" + CowIdCb.SelectedValue.ToString() + "',CowName='" + CowNameTb.Text + "',PregDate='" + PregancyDate.Value.Date + "',ExpDateCalve='" + ExcpectedDate.Value.Date + "',DateCalved='" + CalvedDate.Value.Date + "',CowAge='" + CowAgeTb.Text + "',Remarks='" + RemarkesTb.Text + "' where BrId=" + key + " ;"; 
                     SqlCommand cmd = new SqlCommand(Query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Product Updated");
