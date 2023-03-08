@@ -203,5 +203,32 @@ namespace Dairy_Farm_Management_System
                 }
             }
         }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            if (CowIdCb.SelectedIndex == -1 || CowNameTb.Text == "" || EventTb.Text == "" || CostTb.Text == "" || VetNameTb.Text == "" || DiagnosisTb.Text == "" || TreatmentTb.Text == "")
+            {
+                MessageBox.Show("Select Report");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "update HealthTbl set CowId=" + CowIdCb.SelectedValue.ToString() + ", Cowname='" + CowNameTb.Text + "', RepDate='" + Date.Value.Date + "' ,Event='" + EventTb.Text + "',Diagnosis='" + DiagnosisTb.Text + "',Treatment='" + TreatmentTb.Text + "', Cost='" + CostTb.Text + "', VetName='" + VetNameTb.Text + "' where RepId=" + key + " ;";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Product Updated");
+                    con.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            
+        }
+        }
     }
 }
