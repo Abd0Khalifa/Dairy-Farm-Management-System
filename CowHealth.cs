@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace Dairy_Farm_Management_System
@@ -17,6 +18,8 @@ namespace Dairy_Farm_Management_System
             InitializeComponent();
         }
 
+        SqlConnection con = new SqlConnection(@"Data Source=
+        (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\defds\Documents\DailyFarmDB.mdf;Integrated Security=True;Connect Timeout=30");
         private void label6_Click(object sender, EventArgs e)
         {
             CowHealth obj = new CowHealth();
@@ -64,6 +67,11 @@ namespace Dairy_Farm_Management_System
             Dashboard obj = new Dashboard();
             obj.Show();
             this.Hide();
+        }
+
+        private void SaveBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
