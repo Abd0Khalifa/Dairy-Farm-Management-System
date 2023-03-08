@@ -116,6 +116,24 @@ namespace Dairy_Farm_Management_System
             {
                 MessageBox.Show("Missing Data");
             }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "insert into HealthTbl values(" + CowIdCb.SelectedValue.ToString() + ",'" + CowNameTb.Text + "','" + Date.Value.Date + "','" + EventTb.Text + "','" + DiagnosisTb.Text + "','" + TreatmentTb.Text + "', '" + CostTb.Text + "', '" + VetNameTb.Text + "')";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Health Issue Saved");
+                    con.Close();
+                    populate();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
 
         private void CowIdCb_SelectionChangeCommitted(object sender, EventArgs e)
