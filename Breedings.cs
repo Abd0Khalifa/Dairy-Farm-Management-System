@@ -229,6 +229,24 @@ namespace Dairy_Farm_Management_System
             {
                 MessageBox.Show("Select Breed");
             }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "update BreedTbl set HealthDate='" + HeatDate.Value.Date + "',BreedDate= " + BreedDate.Value.Date + ",CowId=" + CowIdCb.SelectedValue.ToString() + ",CowName=" + CowNameTb.Text + ",PregDate=" + PregancyDate.Value.Date + ",ExpDateCalve='" + ExcpectedDate.Value.Date + ",DateCalved='" + CalvedDate.Value.Date + ",CowAge='" + CowAgeTb.Text + ",Remarks='" + RemarkesTb.Text + "' where BrId=" + key + " ;";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Product Updated");
+                    con.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
