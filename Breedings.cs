@@ -181,7 +181,15 @@ namespace Dairy_Farm_Management_System
             ExcpectedDate.Text = BreedingDGV.SelectedRows[0].Cells[6].Value.ToString();
             CalvedDate.Text = BreedingDGV.SelectedRows[0].Cells[7].Value.ToString();
             RemarkesTb.Text = BreedingDGV.SelectedRows[0].Cells[7].Value.ToString();
-            
+            if (CowNameTb.Text == "")
+            {
+                key = 0;
+
+            }
+            else
+            {
+                key = Convert.ToInt32(BreedingDGV.SelectedRows[0].Cells[0].Value.ToString());
+            }
         }
 
         private void ClearBtn_Click(object sender, EventArgs e)
