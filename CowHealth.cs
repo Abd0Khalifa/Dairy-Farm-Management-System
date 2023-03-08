@@ -172,6 +172,10 @@ namespace Dairy_Farm_Management_System
                 key = 0;
 
             }
+            else
+            {
+                key = Convert.ToInt32(HealtDGV.SelectedRows[0].Cells[0].Value.ToString());
+            }
         }
     }
 }
