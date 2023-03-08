@@ -102,6 +102,7 @@ namespace Dairy_Farm_Management_System
             AmTb.Text = "";
             PmTb.Text = "";
             TotalTb.Text = "";
+            key = 0;
         }
         private void GetCowName()
         {
