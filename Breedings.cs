@@ -173,7 +173,15 @@ namespace Dairy_Farm_Management_System
         int key = 0;
         private void BreedingDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            CowIdCb.SelectedValue = BreedingDGV.SelectedRows[0].Cells[1].Value.ToString();
+            CowNameTb.Text = BreedingDGV.SelectedRows[0].Cells[2].Value.ToString();
+            HeatDate.Text = BreedingDGV.SelectedRows[0].Cells[3].Value.ToString();
+            BreedDate.Text = BreedingDGV.SelectedRows[0].Cells[4].Value.ToString();
+            PregancyDate.Text = BreedingDGV.SelectedRows[0].Cells[5].Value.ToString();
+            ExcpectedDate.Text = BreedingDGV.SelectedRows[0].Cells[6].Value.ToString();
+            CalvedDate.Text = BreedingDGV.SelectedRows[0].Cells[7].Value.ToString();
+            RemarkesTb.Text = BreedingDGV.SelectedRows[0].Cells[7].Value.ToString();
+            
         }
 
         private void ClearBtn_Click(object sender, EventArgs e)
