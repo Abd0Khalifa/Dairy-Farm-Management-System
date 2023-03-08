@@ -25,7 +25,7 @@ namespace Dairy_Farm_Management_System
         private void FillCowId()
         {
             con.Open();
-            SqlCommand cmd = new SqlCommand("select CowId from CowsTbl");
+            SqlCommand cmd = new SqlCommand("select CowId from CowTbl", con);
             SqlDataReader Rdr;
             Rdr = cmd.ExecuteReader();
             DataTable dt = new DataTable();
@@ -141,7 +141,28 @@ namespace Dairy_Farm_Management_System
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-
+            if (CowIdCb.SelectedIndex == -1 || CowNameTb.Text == "" || CowAgeTb.Text == "" || RemarkesTb.Text == "")
+            {
+                MessageBox.Show("Missing Data");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "insert into BreedTbl values('" + HeatDate.Value.Date + "','" + BreedDate.Value.Date + "','" + CowIdCb.SelectedValue.ToString() + "','" + CowNameTb.Text + "','" + PregancyDate.Value.Date + "','" + ExcpectedDate.Value.Date + "', '" + CalvedDate.Value.Date + "', '" + CowAgeTb.Text + "', '" + RemarkesTb.Text + "')";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Breed saved");
+                    con.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
 
         private void CowIdCb_SelectionChangeCommitted(object sender, EventArgs e)
