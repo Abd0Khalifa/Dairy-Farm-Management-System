@@ -112,7 +112,10 @@ namespace Dairy_Farm_Management_System
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-
+            if (CowIdCb.SelectedIndex == -1 || CowNameTb.Text == "" || EventTb.Text == "" || CostTb.Text == "" || VetNameTb.Text == "" || DiagnosisTb.Text == "" || TreatmentTb.Text == "")
+            {
+                MessageBox.Show("Missing Data");
+            }
         }
 
         private void CowIdCb_SelectionChangeCommitted(object sender, EventArgs e)
