@@ -90,5 +90,10 @@ namespace Dairy_Farm_Management_System
         {
             Clear();
         }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
