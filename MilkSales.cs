@@ -19,7 +19,19 @@ namespace Dairy_Farm_Management_System
         }
         SqlConnection con = new SqlConnection(@"Data Source=
         (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\defds\Documents\DailyFarmDB.mdf;Integrated Security=True;Connect Timeout=30");
-
+        private void FillEmpId()
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("select EmpId from EmployeeTbl", con);
+            SqlDataReader Rdr;
+            Rdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("EmpIdCb", typeof(int));
+            dt.Load(Rdr);
+            EmpIdCb.ValueMember = "EmpId";
+            EmpIdCb.DataSource = dt;
+            con.Close();
+        }
         private void label2_Click(object sender, EventArgs e)
         {
 
