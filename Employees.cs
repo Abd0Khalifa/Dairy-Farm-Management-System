@@ -119,7 +119,28 @@ namespace Dairy_Farm_Management_System
 
         private void EditBtn_Click(object sender, EventArgs e)
         {
-
+            if (EmpNameTb.Text == "" || GenCb.SelectedIndex == -1 || PhoneTb.Text == "" || AddressTb.Text == "" )
+            {
+                MessageBox.Show("Missing Data");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "update EmployeeTbl set EmpName='" + EmpNameTb.Text + "', EmpDob= '" + DOB.Value.Date + "',Gender='" + GenCb.SelectedItem.ToString() + "',Phone='" + PhoneTb.Text + "',Address='" + AddressTb.Text + "' where EmpId=" + key + " ;";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Employee Updated");
+                    con.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
