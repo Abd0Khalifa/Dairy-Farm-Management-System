@@ -30,9 +30,9 @@ namespace Dairy_Farm_Management_System
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employees));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -41,6 +41,21 @@ namespace Dairy_Farm_Management_System
             this.label1 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.HealtDGV = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.EmpNameTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.SaveBtn = new System.Windows.Forms.Button();
+            this.EditBtn = new System.Windows.Forms.Button();
+            this.ClearBtn = new System.Windows.Forms.Button();
+            this.label20 = new System.Windows.Forms.Label();
+            this.AddressTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.DeleteBtn = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.PhoneTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.DOf = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.GenCb = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
@@ -124,26 +139,26 @@ namespace Dairy_Farm_Management_System
             // 
             // HealtDGV
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.HealtDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.HealtDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.HealtDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.HealtDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.HealtDGV.ColumnHeadersHeight = 4;
             this.HealtDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.HealtDGV.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.HealtDGV.DefaultCellStyle = dataGridViewCellStyle6;
             this.HealtDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.HealtDGV.Location = new System.Drawing.Point(298, 372);
             this.HealtDGV.Name = "HealtDGV";
@@ -172,15 +187,230 @@ namespace Dairy_Farm_Management_System
             this.HealtDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.HealtDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // EmpNameTb
+            // 
+            this.EmpNameTb.BackColor = System.Drawing.Color.White;
+            this.EmpNameTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.EmpNameTb.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmpNameTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.EmpNameTb.HintForeColor = System.Drawing.Color.Empty;
+            this.EmpNameTb.HintText = "";
+            this.EmpNameTb.isPassword = false;
+            this.EmpNameTb.LineFocusedColor = System.Drawing.Color.Blue;
+            this.EmpNameTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.EmpNameTb.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.EmpNameTb.LineThickness = 3;
+            this.EmpNameTb.Location = new System.Drawing.Point(401, 116);
+            this.EmpNameTb.Margin = new System.Windows.Forms.Padding(8, 10, 8, 10);
+            this.EmpNameTb.Name = "EmpNameTb";
+            this.EmpNameTb.Size = new System.Drawing.Size(185, 47);
+            this.EmpNameTb.TabIndex = 95;
+            this.EmpNameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // SaveBtn
+            // 
+            this.SaveBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.SaveBtn.FlatAppearance.BorderSize = 0;
+            this.SaveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SaveBtn.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveBtn.Location = new System.Drawing.Point(385, 287);
+            this.SaveBtn.Name = "SaveBtn";
+            this.SaveBtn.Size = new System.Drawing.Size(124, 42);
+            this.SaveBtn.TabIndex = 101;
+            this.SaveBtn.Text = "Save";
+            this.SaveBtn.UseVisualStyleBackColor = false;
+            // 
+            // EditBtn
+            // 
+            this.EditBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.EditBtn.FlatAppearance.BorderSize = 0;
+            this.EditBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.EditBtn.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditBtn.Location = new System.Drawing.Point(541, 287);
+            this.EditBtn.Name = "EditBtn";
+            this.EditBtn.Size = new System.Drawing.Size(124, 42);
+            this.EditBtn.TabIndex = 102;
+            this.EditBtn.Text = "Edit";
+            this.EditBtn.UseVisualStyleBackColor = false;
+            // 
+            // ClearBtn
+            // 
+            this.ClearBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClearBtn.FlatAppearance.BorderSize = 0;
+            this.ClearBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ClearBtn.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClearBtn.Location = new System.Drawing.Point(868, 287);
+            this.ClearBtn.Name = "ClearBtn";
+            this.ClearBtn.Size = new System.Drawing.Size(124, 42);
+            this.ClearBtn.TabIndex = 104;
+            this.ClearBtn.Text = "Clear";
+            this.ClearBtn.UseVisualStyleBackColor = false;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe Print", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Black;
+            this.label20.Location = new System.Drawing.Point(634, 41);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(114, 33);
+            this.label20.TabIndex = 105;
+            this.label20.Text = "Employees";
+            // 
+            // AddressTb
+            // 
+            this.AddressTb.BackColor = System.Drawing.Color.White;
+            this.AddressTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AddressTb.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddressTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.AddressTb.HintForeColor = System.Drawing.Color.Empty;
+            this.AddressTb.HintText = "";
+            this.AddressTb.isPassword = false;
+            this.AddressTb.LineFocusedColor = System.Drawing.Color.Blue;
+            this.AddressTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.AddressTb.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.AddressTb.LineThickness = 3;
+            this.AddressTb.Location = new System.Drawing.Point(751, 210);
+            this.AddressTb.Margin = new System.Windows.Forms.Padding(8, 10, 8, 10);
+            this.AddressTb.Name = "AddressTb";
+            this.AddressTb.Size = new System.Drawing.Size(185, 47);
+            this.AddressTb.TabIndex = 94;
+            this.AddressTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // DeleteBtn
+            // 
+            this.DeleteBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.DeleteBtn.FlatAppearance.BorderSize = 0;
+            this.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeleteBtn.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteBtn.Location = new System.Drawing.Point(704, 287);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(124, 42);
+            this.DeleteBtn.TabIndex = 103;
+            this.DeleteBtn.Text = "Delete";
+            this.DeleteBtn.UseVisualStyleBackColor = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe Print", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(745, 178);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(92, 33);
+            this.label4.TabIndex = 89;
+            this.label4.Text = "Address";
+            // 
+            // PhoneTb
+            // 
+            this.PhoneTb.BackColor = System.Drawing.Color.White;
+            this.PhoneTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PhoneTb.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhoneTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PhoneTb.HintForeColor = System.Drawing.Color.Empty;
+            this.PhoneTb.HintText = "";
+            this.PhoneTb.isPassword = false;
+            this.PhoneTb.LineFocusedColor = System.Drawing.Color.Blue;
+            this.PhoneTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.PhoneTb.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.PhoneTb.LineThickness = 3;
+            this.PhoneTb.Location = new System.Drawing.Point(468, 210);
+            this.PhoneTb.Margin = new System.Windows.Forms.Padding(8, 10, 8, 10);
+            this.PhoneTb.Name = "PhoneTb";
+            this.PhoneTb.Size = new System.Drawing.Size(185, 47);
+            this.PhoneTb.TabIndex = 93;
+            this.PhoneTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // DOf
+            // 
+            this.DOf.Font = new System.Drawing.Font("Trebuchet MS", 9.75F);
+            this.DOf.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DOf.Location = new System.Drawing.Point(604, 141);
+            this.DOf.Name = "DOf";
+            this.DOf.Size = new System.Drawing.Size(185, 23);
+            this.DOf.TabIndex = 108;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe Print", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(396, 84);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 33);
+            this.label3.TabIndex = 88;
+            this.label3.Text = "Name";
+            // 
+            // GenCb
+            // 
+            this.GenCb.Font = new System.Drawing.Font("Segoe Print", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GenCb.FormattingEnabled = true;
+            this.GenCb.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.GenCb.Location = new System.Drawing.Point(802, 122);
+            this.GenCb.Name = "GenCb";
+            this.GenCb.Size = new System.Drawing.Size(196, 41);
+            this.GenCb.TabIndex = 106;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe Print", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(802, 84);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 33);
+            this.label2.TabIndex = 87;
+            this.label2.Text = "Gender";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe Print", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(463, 178);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(74, 33);
+            this.label9.TabIndex = 90;
+            this.label9.Text = "Phone";
+            // 
+            // label13
+            // 
+            this.label13.AllowDrop = true;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe Print", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(598, 84);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(56, 33);
+            this.label13.TabIndex = 109;
+            this.label13.Text = "DOF";
+            // 
             // Employees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1120, 676);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.GenCb);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.DOf);
+            this.Controls.Add(this.PhoneTb);
             this.Controls.Add(this.guna2GradientPanel1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.DeleteBtn);
+            this.Controls.Add(this.AddressTb);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.ClearBtn);
+            this.Controls.Add(this.EditBtn);
+            this.Controls.Add(this.SaveBtn);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.HealtDGV);
+            this.Controls.Add(this.EmpNameTb);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Employees";
             this.Text = "Employees";
@@ -205,5 +435,20 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label14;
         private Guna.UI2.WinForms.Guna2DataGridView HealtDGV;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox EmpNameTb;
+        private System.Windows.Forms.Button SaveBtn;
+        private System.Windows.Forms.Button EditBtn;
+        private System.Windows.Forms.Button ClearBtn;
+        private System.Windows.Forms.Label label20;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox AddressTb;
+        private System.Windows.Forms.Button DeleteBtn;
+        private System.Windows.Forms.Label label4;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox PhoneTb;
+        private System.Windows.Forms.DateTimePicker DOf;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox GenCb;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label13;
     }
 }
