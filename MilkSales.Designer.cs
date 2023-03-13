@@ -481,7 +481,7 @@ namespace Dairy_Farm_Management_System
             this.label20.BackColor = System.Drawing.Color.White;
             this.label20.Font = new System.Drawing.Font("Segoe Print", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(614, 41);
+            this.label20.Location = new System.Drawing.Point(643, 41);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(108, 33);
             this.label20.TabIndex = 103;
