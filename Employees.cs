@@ -29,7 +29,7 @@ namespace Dairy_Farm_Management_System
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
             sda.Fill(ds);
-            HealtDGV.DataSource = ds.Tables[0];
+            EmployeeDGV.DataSource = ds.Tables[0];
             con.Close();
         }
 
@@ -65,6 +65,11 @@ namespace Dairy_Farm_Management_System
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void EmployeeDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
