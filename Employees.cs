@@ -43,7 +43,7 @@ namespace Dairy_Farm_Management_System
                 try
                 {
                     con.Open();
-                    string Query = "insert into EmployeeTbl values(" + EmpNameTb.Text + ",'" + DOB.Value.Date + "'," + GenCb.SelectedItem.ToString() + "," + PhoneTb.Text + ")";
+                    string Query = "insert into EmployeeTbl values('" + EmpNameTb.Text + "','" + DOB.Value.Date + "','" + GenCb.SelectedItem.ToString() + "','" + PhoneTb.Text + "','" + AddressTb.Text + "')";
                     SqlCommand cmd = new SqlCommand(Query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Product Saved");
