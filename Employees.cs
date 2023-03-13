@@ -32,6 +32,15 @@ namespace Dairy_Farm_Management_System
             HealtDGV.DataSource = ds.Tables[0];
             con.Close();
         }
+
+        private void Clear()
+        {
+            PhoneTb.Text = "";
+            AddressTb.Text = "";
+            EmpNameTb.Text = "";
+            GenCb.SelectedIndex = -1;
+
+        }
         private void SaveBtn_Click(object sender, EventArgs e)
         {
             if (EmpNameTb.Text=="" || GenCb.SelectedIndex==-1 || PhoneTb.Text == "" || AddressTb.Text == "")
