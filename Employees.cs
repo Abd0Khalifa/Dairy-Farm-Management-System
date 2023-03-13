@@ -34,7 +34,28 @@ namespace Dairy_Farm_Management_System
         }
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-
+            if (EmpNameTb.Text=="" || GenCb.SelectedIndex==-1 || PhoneTb.Text == "" || AddressTb.Text == "")
+            {
+                MessageBox.Show("Missing Data");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "insert into EmployeeTbl values(" + EmpNameTb.Text + ",'" + DOf.Value.Date + "'," + GenCb.SelectedItem.ToString() + "," + PhoneTb.Text + ")";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Product Saved");
+                    con.Close();
+                    populate();
+                    // Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
