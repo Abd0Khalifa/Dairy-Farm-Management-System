@@ -16,5 +16,10 @@ namespace Dairy_Farm_Management_System
         {
             InitializeComponent();
         }
+
+        private void SaveBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
