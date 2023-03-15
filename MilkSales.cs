@@ -17,6 +17,7 @@ namespace Dairy_Farm_Management_System
         {
             InitializeComponent();
             FillEmpId();
+            populate();
         }
         SqlConnection con = new SqlConnection(@"Data Source=
         (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\defds\Documents\DailyFarmDB.mdf;Integrated Security=True;Connect Timeout=30");
