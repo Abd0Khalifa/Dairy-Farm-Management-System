@@ -20,7 +20,17 @@ namespace Dairy_Farm_Management_System
 
         SqlConnection con = new SqlConnection(@"Data Source=
         (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\defds\Documents\DailyFarmDB.mdf;Integrated Security=True;Connect Timeout=30");
-
+        private void populate()
+        {
+            con.Open();
+            string Query = "select * from ExpenditureTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            ExpDGV.DataSource = ds.Tables[0];
+            con.Close();
+        }
         private void dateTimePicker3_ValueChanged(object sender, EventArgs e)
         {
 
