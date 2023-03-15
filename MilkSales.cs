@@ -127,7 +127,7 @@ namespace Dairy_Farm_Management_System
                     MessageBox.Show("Product Sold");
                     con.Close();
                     populate();
-                    //Clear();
+                    Clear();
                 }
                 catch (Exception ex)
                 {
