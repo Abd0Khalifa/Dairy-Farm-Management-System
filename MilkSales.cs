@@ -45,6 +45,16 @@ namespace Dairy_Farm_Management_System
             SalesDGV.DataSource = ds.Tables[0];
             con.Close();
         }
+        private void clear()
+        {
+            EmpIdCb.SelectedIndex = -1;
+            PriceTb.Text = "";
+            PhoneTb.Text = "";
+            QuantityTb.Text = "";
+            CNameTb.Text = "";
+            TotalTb.Text = "";
+
+        }
 
         private void label2_Click(object sender, EventArgs e)
         {
