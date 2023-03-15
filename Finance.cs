@@ -88,7 +88,28 @@ namespace Dairy_Farm_Management_System
 
         private void ExpSaveBtn_Click(object sender, EventArgs e)
         {
-
+            if (PurpCb.SelectedIndex == -1 || AmountTb.Text == "")
+            {
+                MessageBox.Show("Missing Data");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "insert into ExpenditureTbl values('" + ExpDate.Value.Date + "','" + PurbCb.SelectedItem.ToString() + "'," + AmountTb.Text + "," + EmpIdLbl.Text + ")";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Product Saved");
+                    con.Close();
+                    populate();
+                    //Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
