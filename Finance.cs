@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,9 @@ namespace Dairy_Farm_Management_System
         {
             InitializeComponent();
         }
+
+        SqlConnection con = new SqlConnection(@"Data Source=
+        (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\defds\Documents\DailyFarmDB.mdf;Integrated Security=True;Connect Timeout=30");
 
         private void dateTimePicker3_ValueChanged(object sender, EventArgs e)
         {
@@ -69,6 +73,11 @@ namespace Dairy_Farm_Management_System
             Dashboard obj = new Dashboard();
             obj.Show();
             this.Hide();
+        }
+
+        private void ExpSaveBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
