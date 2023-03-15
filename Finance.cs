@@ -88,7 +88,7 @@ namespace Dairy_Farm_Management_System
 
         private void ExpSaveBtn_Click(object sender, EventArgs e)
         {
-            if (PurpCb.SelectedIndex == -1 || AmountTb.Text == "")
+            if (PurbCb.SelectedIndex == -1 || AmountTb.Text == "")
             {
                 MessageBox.Show("Missing Data");
             }
@@ -97,10 +97,10 @@ namespace Dairy_Farm_Management_System
                 try
                 {
                     con.Open();
-                    string Query = "insert into ExpenditureTbl values('" + ExpDate.Value.Date + "','" + PurbCb.SelectedItem.ToString() + "'," + AmountTb.Text + "," + EmpIdLbl.Text + ")";
+                    string Query = "insert into ExpenditureTbl values('" + ExpDate.Value.Date + "','" + PurbCb.SelectedItem.ToString() + "'," + AmountTb.Text + "," + EmpIdlbl.Text + ")";
                     SqlCommand cmd = new SqlCommand(Query, con);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Product Saved");
+                    MessageBox.Show("Expenditure Saved");
                     con.Close();
                     populate();
                     //Clear();
