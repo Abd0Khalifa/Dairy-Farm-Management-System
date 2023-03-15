@@ -30,9 +30,9 @@ namespace Dairy_Farm_Management_System
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MilkSales));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TotalTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -49,7 +49,6 @@ namespace Dairy_Farm_Management_System
             this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.DeleteBtn = new System.Windows.Forms.Button();
             this.PriceTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -67,7 +66,6 @@ namespace Dairy_Farm_Management_System
             this.panel1 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
             this.ClearBtn = new System.Windows.Forms.Button();
-            this.EditBtn = new System.Windows.Forms.Button();
             this.SaveBtn = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.SalesDGV = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -279,19 +277,6 @@ namespace Dairy_Farm_Management_System
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
-            // DeleteBtn
-            // 
-            this.DeleteBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.DeleteBtn.FlatAppearance.BorderSize = 0;
-            this.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DeleteBtn.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteBtn.Location = new System.Drawing.Point(704, 287);
-            this.DeleteBtn.Name = "DeleteBtn";
-            this.DeleteBtn.Size = new System.Drawing.Size(124, 42);
-            this.DeleteBtn.TabIndex = 101;
-            this.DeleteBtn.Text = "Delete";
-            this.DeleteBtn.UseVisualStyleBackColor = false;
-            // 
             // PriceTb
             // 
             this.PriceTb.BackColor = System.Drawing.Color.White;
@@ -495,7 +480,7 @@ namespace Dairy_Farm_Management_System
             this.ClearBtn.FlatAppearance.BorderSize = 0;
             this.ClearBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClearBtn.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClearBtn.Location = new System.Drawing.Point(868, 287);
+            this.ClearBtn.Location = new System.Drawing.Point(792, 287);
             this.ClearBtn.Name = "ClearBtn";
             this.ClearBtn.Size = new System.Drawing.Size(124, 42);
             this.ClearBtn.TabIndex = 102;
@@ -503,26 +488,13 @@ namespace Dairy_Farm_Management_System
             this.ClearBtn.UseVisualStyleBackColor = false;
             this.ClearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
             // 
-            // EditBtn
-            // 
-            this.EditBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.EditBtn.FlatAppearance.BorderSize = 0;
-            this.EditBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EditBtn.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditBtn.Location = new System.Drawing.Point(541, 287);
-            this.EditBtn.Name = "EditBtn";
-            this.EditBtn.Size = new System.Drawing.Size(124, 42);
-            this.EditBtn.TabIndex = 100;
-            this.EditBtn.Text = "Edit";
-            this.EditBtn.UseVisualStyleBackColor = false;
-            // 
             // SaveBtn
             // 
             this.SaveBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.SaveBtn.FlatAppearance.BorderSize = 0;
             this.SaveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveBtn.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveBtn.Location = new System.Drawing.Point(385, 287);
+            this.SaveBtn.Location = new System.Drawing.Point(516, 287);
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.Size = new System.Drawing.Size(124, 42);
             this.SaveBtn.TabIndex = 99;
@@ -543,26 +515,26 @@ namespace Dairy_Farm_Management_System
             // 
             // SalesDGV
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.SalesDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.SalesDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            this.SalesDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.SalesDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.SalesDGV.ColumnHeadersHeight = 4;
             this.SalesDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.SalesDGV.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.SalesDGV.DefaultCellStyle = dataGridViewCellStyle12;
             this.SalesDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.SalesDGV.Location = new System.Drawing.Point(298, 372);
             this.SalesDGV.Name = "SalesDGV";
@@ -727,7 +699,6 @@ namespace Dairy_Farm_Management_System
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Date);
             this.Controls.Add(this.TotalTb);
-            this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.PriceTb);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.label4);
@@ -735,7 +706,6 @@ namespace Dairy_Farm_Management_System
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.ClearBtn);
-            this.Controls.Add(this.EditBtn);
             this.Controls.Add(this.SaveBtn);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.SalesDGV);
@@ -799,7 +769,6 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button DeleteBtn;
         private Bunifu.Framework.UI.BunifuMaterialTextbox PriceTb;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private System.Windows.Forms.Label label1;
@@ -817,7 +786,6 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button ClearBtn;
-        private System.Windows.Forms.Button EditBtn;
         private System.Windows.Forms.Button SaveBtn;
         private System.Windows.Forms.Label label14;
         private Guna.UI2.WinForms.Guna2DataGridView SalesDGV;
