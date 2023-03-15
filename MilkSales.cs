@@ -102,7 +102,28 @@ namespace Dairy_Farm_Management_System
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-
+            if (.SelectedIndex == -1 || CownameTb.Text == "" || AmTb.Text == "" || PmTb.Text == "" || noonTb.Text == "" || TotalTb.Text == "")
+            {
+                MessageBox.Show("Missing Data");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "insert into MilkTbl values(" + EmpIdCb.SelectedValue.ToString() + ",'" + CownameTb.Text + "'," + AmTb.Text + "," + noonTb.Text + "," + PmTb.Text + "," + TotalTb.Text + ", '" + Date.Value.Date + "')";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Product Saved");
+                    con.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
 
         private void QuantityTb_Leave(object sender, EventArgs e)
