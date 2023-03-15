@@ -16,6 +16,7 @@ namespace Dairy_Farm_Management_System
         public Finance()
         {
             InitializeComponent();
+            populate();
         }
 
         SqlConnection con = new SqlConnection(@"Data Source=
