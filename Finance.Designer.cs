@@ -68,7 +68,7 @@ namespace Dairy_Farm_Management_System
             this.label10 = new System.Windows.Forms.Label();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.ExpDate = new System.Windows.Forms.DateTimePicker();
             this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label9 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -419,7 +419,7 @@ namespace Dairy_Farm_Management_System
             this.panel9.Controls.Add(this.label10);
             this.panel9.Controls.Add(this.guna2DataGridView1);
             this.panel9.Controls.Add(this.comboBox1);
-            this.panel9.Controls.Add(this.dateTimePicker3);
+            this.panel9.Controls.Add(this.ExpDate);
             this.panel9.Controls.Add(this.bunifuMaterialTextbox3);
             this.panel9.Controls.Add(this.label9);
             this.panel9.Controls.Add(this.label3);
@@ -501,15 +501,15 @@ namespace Dairy_Farm_Management_System
             this.comboBox1.Size = new System.Drawing.Size(185, 31);
             this.comboBox1.TabIndex = 112;
             // 
-            // dateTimePicker3
+            // ExpDate
             // 
-            this.dateTimePicker3.Font = new System.Drawing.Font("Trebuchet MS", 9.75F);
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker3.Location = new System.Drawing.Point(9, 68);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(185, 23);
-            this.dateTimePicker3.TabIndex = 111;
-            this.dateTimePicker3.ValueChanged += new System.EventHandler(this.dateTimePicker3_ValueChanged);
+            this.ExpDate.Font = new System.Drawing.Font("Trebuchet MS", 9.75F);
+            this.ExpDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.ExpDate.Location = new System.Drawing.Point(9, 68);
+            this.ExpDate.Name = "ExpDate";
+            this.ExpDate.Size = new System.Drawing.Size(185, 23);
+            this.ExpDate.TabIndex = 111;
+            this.ExpDate.ValueChanged += new System.EventHandler(this.dateTimePicker3_ValueChanged);
             // 
             // bunifuMaterialTextbox3
             // 
@@ -868,7 +868,7 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.DateTimePicker ExpDate;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label3;
