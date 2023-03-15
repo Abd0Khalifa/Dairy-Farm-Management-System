@@ -49,6 +49,11 @@ namespace Dairy_Farm_Management_System
             ExpDGV.DataSource = ds.Tables[0];
             con.Close();
         }
+        private void clearInc()
+        {
+            IncPurpCb.SelectedIndex = -1;
+            AmountTb.Text = "";
+        }
         private void dateTimePicker3_ValueChanged(object sender, EventArgs e)
         {
 
