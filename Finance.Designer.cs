@@ -67,7 +67,7 @@ namespace Dairy_Farm_Management_System
             this.panel9 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.ExpDVG = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.PurbCb = new System.Windows.Forms.ComboBox();
             this.ExpDate = new System.Windows.Forms.DateTimePicker();
             this.AmountTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label9 = new System.Windows.Forms.Label();
@@ -418,7 +418,7 @@ namespace Dairy_Farm_Management_System
             // 
             this.panel9.Controls.Add(this.label10);
             this.panel9.Controls.Add(this.ExpDVG);
-            this.panel9.Controls.Add(this.comboBox1);
+            this.panel9.Controls.Add(this.PurbCb);
             this.panel9.Controls.Add(this.ExpDate);
             this.panel9.Controls.Add(this.AmountTb);
             this.panel9.Controls.Add(this.label9);
@@ -492,20 +492,20 @@ namespace Dairy_Farm_Management_System
             this.ExpDVG.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.ExpDVG.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // comboBox1
+            // PurbCb
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.PurbCb.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PurbCb.FormattingEnabled = true;
+            this.PurbCb.Items.AddRange(new object[] {
             "Maintenance",
             "Food",
             "Salary",
             "Tax",
             "Other"});
-            this.comboBox1.Location = new System.Drawing.Point(9, 120);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(185, 31);
-            this.comboBox1.TabIndex = 112;
+            this.PurbCb.Location = new System.Drawing.Point(9, 120);
+            this.PurbCb.Name = "PurbCb";
+            this.PurbCb.Size = new System.Drawing.Size(185, 31);
+            this.PurbCb.TabIndex = 112;
             // 
             // ExpDate
             // 
@@ -873,7 +873,7 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button ExpSaveBtn;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox PurbCb;
         private System.Windows.Forms.DateTimePicker ExpDate;
         private Bunifu.Framework.UI.BunifuMaterialTextbox AmountTb;
         private System.Windows.Forms.Label label9;
