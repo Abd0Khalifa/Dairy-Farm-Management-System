@@ -33,6 +33,18 @@ namespace Dairy_Farm_Management_System
             EmpIdCb.DataSource = dt;
             con.Close();
         }
+        private void populate()
+        {
+            con.Open();
+            string Query = "select * from MilkSalesTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            SalesDGV.DataSource = ds.Tables[0];
+            con.Close();
+        }
+
         private void label2_Click(object sender, EventArgs e)
         {
 
