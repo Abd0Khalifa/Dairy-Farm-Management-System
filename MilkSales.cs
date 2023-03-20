@@ -55,7 +55,26 @@ namespace Dairy_Farm_Management_System
             TotalTb.Text = "";
 
         }
-
+        private void SaveTransaction()
+        {
+            {
+                try
+                {
+                    string Sales = "Sales";
+                    con.Open();
+                    string Query = "insert into IncomeTbl values('" + Date.Value.Date + "','" + Sales + "'," + TotalTb.Text + "," + EmpIdCb.SelectedValue.ToString() + ")";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Income Saved");
+                    con.Close();
+                    
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -127,6 +146,7 @@ namespace Dairy_Farm_Management_System
                     MessageBox.Show("Product Sold");
                     con.Close();
                     populate();
+                    SaveTransaction();
                     Clear();
                 }
                 catch (Exception ex)
