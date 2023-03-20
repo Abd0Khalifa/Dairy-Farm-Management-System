@@ -201,5 +201,10 @@ namespace Dairy_Farm_Management_System
         {
             populate();
         }
+
+        private void Finance_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
