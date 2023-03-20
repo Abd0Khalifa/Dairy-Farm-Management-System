@@ -49,6 +49,17 @@ namespace Dairy_Farm_Management_System
             IncDGV.DataSource = ds.Tables[0];
             con.Close();
         }
+        private void FilterIncome()
+        {
+            con.Open();
+            string Query = "select * from IncomeTbl where IncDate=";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            IncDGV.DataSource = ds.Tables[0];
+            con.Close();
+        }
         private void clearInc()
         {
             IncPurpCb.SelectedIndex = -1;
