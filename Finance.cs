@@ -52,7 +52,7 @@ namespace Dairy_Farm_Management_System
         private void FilterIncome()
         {
             con.Open();
-            string Query = "select * from IncomeTbl where IncDate=";
+            string Query = "select * from IncomeTbl where IncDate='"+IncDateFilter.Value.Date+"'";
             SqlDataAdapter sda = new SqlDataAdapter(Query, con);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
