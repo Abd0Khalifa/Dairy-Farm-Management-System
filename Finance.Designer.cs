@@ -92,6 +92,7 @@ namespace Dairy_Farm_Management_System
             this.ExpDateFilter = new System.Windows.Forms.DateTimePicker();
             this.label24 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel8.SuspendLayout();
@@ -114,6 +115,7 @@ namespace Dairy_Farm_Management_System
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IncDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
             // label19
@@ -421,6 +423,7 @@ namespace Dairy_Farm_Management_System
             // 
             // panel9
             // 
+            this.panel9.Controls.Add(this.pictureBox10);
             this.panel9.Controls.Add(this.ExpDateFilter);
             this.panel9.Controls.Add(this.label24);
             this.panel9.Controls.Add(this.label10);
@@ -820,7 +823,7 @@ namespace Dairy_Farm_Management_System
             // 
             this.ExpDateFilter.Font = new System.Drawing.Font("Trebuchet MS", 9.75F);
             this.ExpDateFilter.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.ExpDateFilter.Location = new System.Drawing.Point(496, 35);
+            this.ExpDateFilter.Location = new System.Drawing.Point(449, 34);
             this.ExpDateFilter.Name = "ExpDateFilter";
             this.ExpDateFilter.Size = new System.Drawing.Size(185, 23);
             this.ExpDateFilter.TabIndex = 118;
@@ -831,7 +834,7 @@ namespace Dairy_Farm_Management_System
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.Black;
-            this.label24.Location = new System.Drawing.Point(424, 35);
+            this.label24.Location = new System.Drawing.Point(388, 35);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(52, 23);
             this.label24.TabIndex = 117;
@@ -847,6 +850,16 @@ namespace Dairy_Farm_Management_System
             this.pictureBox9.TabIndex = 117;
             this.pictureBox9.TabStop = false;
             this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(640, 23);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(39, 35);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 119;
+            this.pictureBox10.TabStop = false;
             // 
             // Finance
             // 
@@ -897,6 +910,7 @@ namespace Dairy_Farm_Management_System
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IncDGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -959,5 +973,6 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.DateTimePicker ExpDateFilter;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox10;
     }
 }
