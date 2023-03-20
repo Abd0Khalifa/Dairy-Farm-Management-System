@@ -63,7 +63,7 @@ namespace Dairy_Farm_Management_System
         private void FilterExp()
         {
             con.Open();
-            string Query = "select * from IncomeTbl where IncDate='" + IncDateFilter.Value.Date + "'";
+            string Query = "select * from ExpenditureTbl where ExpDate='" + ExpDateFilter.Value.Date + "'";
             SqlDataAdapter sda = new SqlDataAdapter(Query, con);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
