@@ -58,6 +58,17 @@ namespace Dairy_Farm_Management_System
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.guna2GradientPanel5 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2GradientPanel6 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2GradientPanel7 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2GradientPanel8 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2GradientPanel9 = new Guna.UI2.WinForms.Guna2GradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel8.SuspendLayout();
@@ -75,6 +86,8 @@ namespace Dairy_Farm_Management_System
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel10.SuspendLayout();
+            this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // label19
@@ -380,11 +393,108 @@ namespace Dairy_Farm_Management_System
             this.label20.TabIndex = 104;
             this.label20.Text = "Dashboard";
             // 
+            // panel9
+            // 
+            this.panel9.Location = new System.Drawing.Point(0, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(200, 100);
+            this.panel9.TabIndex = 105;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.guna2GradientPanel4);
+            this.panel10.Controls.Add(this.guna2GradientPanel3);
+            this.panel10.Controls.Add(this.guna2GradientPanel2);
+            this.panel10.Location = new System.Drawing.Point(276, 115);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(414, 326);
+            this.panel10.TabIndex = 106;
+            this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
+            // 
+            // guna2GradientPanel2
+            // 
+            this.guna2GradientPanel2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(24, 37);
+            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(172, 121);
+            this.guna2GradientPanel2.TabIndex = 0;
+            // 
+            // guna2GradientPanel3
+            // 
+            this.guna2GradientPanel3.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.guna2GradientPanel3.Location = new System.Drawing.Point(222, 37);
+            this.guna2GradientPanel3.Name = "guna2GradientPanel3";
+            this.guna2GradientPanel3.Size = new System.Drawing.Size(172, 121);
+            this.guna2GradientPanel3.TabIndex = 1;
+            // 
+            // guna2GradientPanel4
+            // 
+            this.guna2GradientPanel4.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.guna2GradientPanel4.Location = new System.Drawing.Point(116, 177);
+            this.guna2GradientPanel4.Name = "guna2GradientPanel4";
+            this.guna2GradientPanel4.Size = new System.Drawing.Size(172, 121);
+            this.guna2GradientPanel4.TabIndex = 2;
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.guna2GradientPanel5);
+            this.panel11.Controls.Add(this.guna2GradientPanel6);
+            this.panel11.Controls.Add(this.guna2GradientPanel7);
+            this.panel11.Location = new System.Drawing.Point(696, 115);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(414, 326);
+            this.panel11.TabIndex = 107;
+            // 
+            // guna2GradientPanel5
+            // 
+            this.guna2GradientPanel5.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.guna2GradientPanel5.Location = new System.Drawing.Point(116, 177);
+            this.guna2GradientPanel5.Name = "guna2GradientPanel5";
+            this.guna2GradientPanel5.Size = new System.Drawing.Size(172, 121);
+            this.guna2GradientPanel5.TabIndex = 2;
+            // 
+            // guna2GradientPanel6
+            // 
+            this.guna2GradientPanel6.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.guna2GradientPanel6.Location = new System.Drawing.Point(222, 37);
+            this.guna2GradientPanel6.Name = "guna2GradientPanel6";
+            this.guna2GradientPanel6.Size = new System.Drawing.Size(172, 121);
+            this.guna2GradientPanel6.TabIndex = 1;
+            // 
+            // guna2GradientPanel7
+            // 
+            this.guna2GradientPanel7.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.guna2GradientPanel7.Location = new System.Drawing.Point(24, 37);
+            this.guna2GradientPanel7.Name = "guna2GradientPanel7";
+            this.guna2GradientPanel7.Size = new System.Drawing.Size(172, 121);
+            this.guna2GradientPanel7.TabIndex = 0;
+            // 
+            // guna2GradientPanel8
+            // 
+            this.guna2GradientPanel8.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.guna2GradientPanel8.Location = new System.Drawing.Point(392, 489);
+            this.guna2GradientPanel8.Name = "guna2GradientPanel8";
+            this.guna2GradientPanel8.Size = new System.Drawing.Size(278, 160);
+            this.guna2GradientPanel8.TabIndex = 108;
+            // 
+            // guna2GradientPanel9
+            // 
+            this.guna2GradientPanel9.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.guna2GradientPanel9.Location = new System.Drawing.Point(706, 489);
+            this.guna2GradientPanel9.Name = "guna2GradientPanel9";
+            this.guna2GradientPanel9.Size = new System.Drawing.Size(278, 160);
+            this.guna2GradientPanel9.TabIndex = 109;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1120, 676);
+            this.Controls.Add(this.guna2GradientPanel9);
+            this.Controls.Add(this.guna2GradientPanel8);
+            this.Controls.Add(this.panel11);
+            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.panel9);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label20);
@@ -418,6 +528,8 @@ namespace Dairy_Farm_Management_System
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel10.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -452,5 +564,16 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel10;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel4;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel3;
+        private System.Windows.Forms.Panel panel11;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel5;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel6;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel7;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel8;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel9;
     }
 }

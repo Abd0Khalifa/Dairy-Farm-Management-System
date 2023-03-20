@@ -65,5 +65,10 @@ namespace Dairy_Farm_Management_System
             obj.Show();
             this.Hide();
         }
+
+        private void panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
