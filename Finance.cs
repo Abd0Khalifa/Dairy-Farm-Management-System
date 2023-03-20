@@ -76,6 +76,19 @@ namespace Dairy_Farm_Management_System
             IncPurpCb.SelectedIndex = -1;
             AmountTb.Text = "";
         }
+        private void FillEmpId()
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("select EmpId from EmployeeTbl", con);
+            SqlDataReader Rdr;
+            Rdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("EmpIdCb", typeof(int));
+            dt.Load(Rdr);
+            EmpIdCb.ValueMember = "EmpId";
+            EmpIdCb.DataSource = dt;
+            con.Close();
+        }
         private void dateTimePicker3_ValueChanged(object sender, EventArgs e)
         {
 
