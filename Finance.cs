@@ -170,5 +170,10 @@ namespace Dairy_Farm_Management_System
                 }
             }
         }
+
+        private void IncDateFilter_ValueChanged(object sender, EventArgs e)
+        {
+            FilterIncome();
+        }
     }
 }
