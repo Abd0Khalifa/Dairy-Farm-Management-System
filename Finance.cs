@@ -194,7 +194,7 @@ namespace Dairy_Farm_Management_System
 
         private void ExpDateFilter_ValueChanged(object sender, EventArgs e)
         {
-
+            FilterExp();
         }
     }
 }
