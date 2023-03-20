@@ -18,6 +18,7 @@ namespace Dairy_Farm_Management_System
             InitializeComponent();
             populate();
             Incpopulate();
+            FillEmpId();
         }
 
         SqlConnection con = new SqlConnection(@"Data Source=
