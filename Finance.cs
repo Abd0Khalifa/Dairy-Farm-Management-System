@@ -196,5 +196,10 @@ namespace Dairy_Farm_Management_System
         {
             FilterExp();
         }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            populate();
+        }
     }
 }
