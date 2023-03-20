@@ -68,7 +68,7 @@ namespace Dairy_Farm_Management_System
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
             sda.Fill(ds);
-            IncDGV.DataSource = ds.Tables[0];
+            ExpDGV.DataSource = ds.Tables[0];
             con.Close();
         }
         private void clearInc()
