@@ -85,5 +85,10 @@ namespace Dairy_Farm_Management_System
         {
 
         }
+
+        private void guna2GradientPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
