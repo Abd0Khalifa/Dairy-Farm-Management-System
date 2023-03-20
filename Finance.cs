@@ -60,6 +60,17 @@ namespace Dairy_Farm_Management_System
             IncDGV.DataSource = ds.Tables[0];
             con.Close();
         }
+        private void FilterExp()
+        {
+            con.Open();
+            string Query = "select * from IncomeTbl where IncDate='" + IncDateFilter.Value.Date + "'";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            IncDGV.DataSource = ds.Tables[0];
+            con.Close();
+        }
         private void clearInc()
         {
             IncPurpCb.SelectedIndex = -1;
@@ -179,6 +190,11 @@ namespace Dairy_Farm_Management_System
         private void pictureBox9_Click(object sender, EventArgs e)
         {
             Incpopulate();
+        }
+
+        private void ExpDateFilter_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
