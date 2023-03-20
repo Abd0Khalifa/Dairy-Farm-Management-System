@@ -175,5 +175,10 @@ namespace Dairy_Farm_Management_System
         {
             FilterIncome();
         }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            Incpopulate();
+        }
     }
 }
