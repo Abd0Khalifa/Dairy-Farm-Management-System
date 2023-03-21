@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -65,7 +66,13 @@ namespace Dairy_Farm_Management_System
             obj.Show();
             this.Hide();
         }
+        SqlConnection con = new SqlConnection(@"Data Source=
+        (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\defds\Documents\DailyFarmDB.mdf;Integrated Security=True;Connect Timeout=30");
 
+        private void Finance()
+        {
+
+        }
         private void panel10_Paint(object sender, PaintEventArgs e)
         {
 
