@@ -86,6 +86,7 @@ namespace Dairy_Farm_Management_System
             exp = Convert.ToInt32(dt1.Rows[0][0].ToString());
             ExpLbl.Text = "Rs" + dt1.Rows[0][0].ToString();
             bal = inc - exp;
+            BalLbl.Text = "Rs" + bal;
             con.Close();
         }
         private void panel10_Paint(object sender, PaintEventArgs e)
