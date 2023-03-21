@@ -71,7 +71,12 @@ namespace Dairy_Farm_Management_System
 
         private void Finance()
         {
-
+            con.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("select sum(IncAmt) from IncomeTbl", con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            IncLbl.Text = dt.Rows[0][0].ToString();
+            con.Close();
         }
         private void panel10_Paint(object sender, PaintEventArgs e)
         {

@@ -60,35 +60,35 @@ namespace Dairy_Farm_Management_System
             this.label20 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.guna2GradientPanel5 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientPanel6 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientPanel7 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientPanel8 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientPanel9 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
+            this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.IncLbl = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.guna2GradientPanel5 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.guna2GradientPanel6 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.guna2GradientPanel7 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.guna2GradientPanel8 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.guna2GradientPanel9 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel8.SuspendLayout();
@@ -107,9 +107,9 @@ namespace Dairy_Farm_Management_System
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel10.SuspendLayout();
-            this.guna2GradientPanel2.SuspendLayout();
-            this.guna2GradientPanel3.SuspendLayout();
             this.guna2GradientPanel4.SuspendLayout();
+            this.guna2GradientPanel3.SuspendLayout();
+            this.guna2GradientPanel2.SuspendLayout();
             this.panel11.SuspendLayout();
             this.guna2GradientPanel5.SuspendLayout();
             this.guna2GradientPanel6.SuspendLayout();
@@ -440,18 +440,53 @@ namespace Dairy_Farm_Management_System
             this.panel10.TabIndex = 106;
             this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
             // 
-            // guna2GradientPanel2
+            // label2
             // 
-            this.guna2GradientPanel2.BorderRadius = 10;
-            this.guna2GradientPanel2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.guna2GradientPanel2.Controls.Add(this.label9);
-            this.guna2GradientPanel2.Controls.Add(this.label4);
-            this.guna2GradientPanel2.FillColor = System.Drawing.Color.Green;
-            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.Olive;
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(24, 37);
-            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(172, 121);
-            this.guna2GradientPanel2.TabIndex = 0;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(160, 6);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(87, 27);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Finance";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // guna2GradientPanel4
+            // 
+            this.guna2GradientPanel4.BorderRadius = 10;
+            this.guna2GradientPanel4.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.guna2GradientPanel4.Controls.Add(this.label23);
+            this.guna2GradientPanel4.Controls.Add(this.label22);
+            this.guna2GradientPanel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.guna2GradientPanel4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.guna2GradientPanel4.Location = new System.Drawing.Point(116, 177);
+            this.guna2GradientPanel4.Name = "guna2GradientPanel4";
+            this.guna2GradientPanel4.Size = new System.Drawing.Size(172, 121);
+            this.guna2GradientPanel4.TabIndex = 2;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.Transparent;
+            this.label23.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.White;
+            this.label23.Location = new System.Drawing.Point(65, 62);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(34, 26);
+            this.label23.TabIndex = 6;
+            this.label23.Text = "Rs";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(46, 25);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(84, 26);
+            this.label22.TabIndex = 5;
+            this.label22.Text = "Balance";
             // 
             // guna2GradientPanel3
             // 
@@ -467,18 +502,66 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel3.TabIndex = 1;
             this.guna2GradientPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2GradientPanel3_Paint);
             // 
-            // guna2GradientPanel4
+            // label11
             // 
-            this.guna2GradientPanel4.BorderRadius = 10;
-            this.guna2GradientPanel4.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.guna2GradientPanel4.Controls.Add(this.label23);
-            this.guna2GradientPanel4.Controls.Add(this.label22);
-            this.guna2GradientPanel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.guna2GradientPanel4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2GradientPanel4.Location = new System.Drawing.Point(116, 177);
-            this.guna2GradientPanel4.Name = "guna2GradientPanel4";
-            this.guna2GradientPanel4.Size = new System.Drawing.Size(172, 121);
-            this.guna2GradientPanel4.TabIndex = 2;
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(27, 23);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(122, 26);
+            this.label11.TabIndex = 6;
+            this.label11.Text = "Expenditure";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(67, 60);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(34, 26);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "Rs";
+            // 
+            // guna2GradientPanel2
+            // 
+            this.guna2GradientPanel2.BorderRadius = 10;
+            this.guna2GradientPanel2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.guna2GradientPanel2.Controls.Add(this.IncLbl);
+            this.guna2GradientPanel2.Controls.Add(this.label4);
+            this.guna2GradientPanel2.FillColor = System.Drawing.Color.Green;
+            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.Olive;
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(24, 37);
+            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(172, 121);
+            this.guna2GradientPanel2.TabIndex = 0;
+            // 
+            // IncLbl
+            // 
+            this.IncLbl.AutoSize = true;
+            this.IncLbl.BackColor = System.Drawing.Color.Transparent;
+            this.IncLbl.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IncLbl.ForeColor = System.Drawing.Color.White;
+            this.IncLbl.Location = new System.Drawing.Point(62, 64);
+            this.IncLbl.Name = "IncLbl";
+            this.IncLbl.Size = new System.Drawing.Size(34, 26);
+            this.IncLbl.TabIndex = 5;
+            this.IncLbl.Text = "Rs";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(40, 26);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(81, 26);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Income";
             // 
             // panel11
             // 
@@ -490,6 +573,16 @@ namespace Dairy_Farm_Management_System
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(414, 326);
             this.panel11.TabIndex = 107;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(164, 6);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(88, 27);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Logistic";
             // 
             // guna2GradientPanel5
             // 
@@ -504,6 +597,30 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel5.Size = new System.Drawing.Size(172, 121);
             this.guna2GradientPanel5.TabIndex = 2;
             // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.Location = new System.Drawing.Point(31, 64);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(109, 26);
+            this.label25.TabIndex = 6;
+            this.label25.Text = "EmpName";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.Transparent;
+            this.label24.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.White;
+            this.label24.Location = new System.Drawing.Point(31, 22);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(111, 26);
+            this.label24.TabIndex = 5;
+            this.label24.Text = "Employees";
+            // 
             // guna2GradientPanel6
             // 
             this.guna2GradientPanel6.BorderRadius = 10;
@@ -516,6 +633,31 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel6.Name = "guna2GradientPanel6";
             this.guna2GradientPanel6.Size = new System.Drawing.Size(172, 121);
             this.guna2GradientPanel6.TabIndex = 1;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(55, 61);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(58, 26);
+            this.label21.TabIndex = 6;
+            this.label21.Text = "Num";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(3, 21);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(164, 23);
+            this.label14.TabIndex = 5;
+            this.label14.Text = "Milk Stok in Litters";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // guna2GradientPanel7
             // 
@@ -530,6 +672,30 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel7.Size = new System.Drawing.Size(172, 121);
             this.guna2GradientPanel7.TabIndex = 0;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(58, 64);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(58, 26);
+            this.label13.TabIndex = 6;
+            this.label13.Text = "Num";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(56, 23);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(61, 26);
+            this.label12.TabIndex = 5;
+            this.label12.Text = "Cows";
+            // 
             // guna2GradientPanel8
             // 
             this.guna2GradientPanel8.BorderRadius = 10;
@@ -543,6 +709,42 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel8.Name = "guna2GradientPanel8";
             this.guna2GradientPanel8.Size = new System.Drawing.Size(278, 160);
             this.guna2GradientPanel8.TabIndex = 108;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.BackColor = System.Drawing.Color.Transparent;
+            this.label28.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.White;
+            this.label28.Location = new System.Drawing.Point(87, 96);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(100, 26);
+            this.label28.TabIndex = 7;
+            this.label28.Text = "Sale Date";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.Transparent;
+            this.label27.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.White;
+            this.label27.Location = new System.Drawing.Point(24, 64);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(34, 26);
+            this.label27.TabIndex = 6;
+            this.label27.Text = "Rs";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.White;
+            this.label26.Location = new System.Drawing.Point(76, 23);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(127, 26);
+            this.label26.TabIndex = 5;
+            this.label26.Text = "Highest Sale";
             // 
             // guna2GradientPanel9
             // 
@@ -559,219 +761,17 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel9.TabIndex = 109;
             this.guna2GradientPanel9.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2GradientPanel9_Paint);
             // 
-            // label2
+            // label31
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(160, 6);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 27);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Finance";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(164, 6);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 27);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Logistic";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(40, 26);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 26);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Income";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(62, 64);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(34, 26);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "Rs";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(67, 60);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(34, 26);
-            this.label10.TabIndex = 5;
-            this.label10.Text = "Rs";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(27, 23);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(122, 26);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "Expenditure";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(56, 23);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(61, 26);
-            this.label12.TabIndex = 5;
-            this.label12.Text = "Cows";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(58, 64);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(58, 26);
-            this.label13.TabIndex = 6;
-            this.label13.Text = "Num";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(3, 21);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(164, 23);
-            this.label14.TabIndex = 5;
-            this.label14.Text = "Milk Stok in Litters";
-            this.label14.Click += new System.EventHandler(this.label14_Click);
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(55, 61);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(58, 26);
-            this.label21.TabIndex = 6;
-            this.label21.Text = "Num";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(46, 25);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(84, 26);
-            this.label22.TabIndex = 5;
-            this.label22.Text = "Balance";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.Transparent;
-            this.label23.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(65, 62);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(34, 26);
-            this.label23.TabIndex = 6;
-            this.label23.Text = "Rs";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.Transparent;
-            this.label24.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(31, 22);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(111, 26);
-            this.label24.TabIndex = 5;
-            this.label24.Text = "Employees";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(31, 64);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(109, 26);
-            this.label25.TabIndex = 6;
-            this.label25.Text = "EmpName";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.Color.Transparent;
-            this.label26.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(76, 23);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(127, 26);
-            this.label26.TabIndex = 5;
-            this.label26.Text = "Highest Sale";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.BackColor = System.Drawing.Color.Transparent;
-            this.label27.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(24, 64);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(34, 26);
-            this.label27.TabIndex = 6;
-            this.label27.Text = "Rs";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.BackColor = System.Drawing.Color.Transparent;
-            this.label28.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.White;
-            this.label28.Location = new System.Drawing.Point(87, 96);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(100, 26);
-            this.label28.TabIndex = 7;
-            this.label28.Text = "Sale Date";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.BackColor = System.Drawing.Color.Transparent;
-            this.label29.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.White;
-            this.label29.Location = new System.Drawing.Point(45, 20);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(199, 26);
-            this.label29.TabIndex = 5;
-            this.label29.Text = "Highest Expenditure";
+            this.label31.AutoSize = true;
+            this.label31.BackColor = System.Drawing.Color.Transparent;
+            this.label31.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.White;
+            this.label31.Location = new System.Drawing.Point(93, 96);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(95, 26);
+            this.label31.TabIndex = 7;
+            this.label31.Text = "Exp Date";
             // 
             // label30
             // 
@@ -785,17 +785,17 @@ namespace Dairy_Farm_Management_System
             this.label30.TabIndex = 6;
             this.label30.Text = "Rs";
             // 
-            // label31
+            // label29
             // 
-            this.label31.AutoSize = true;
-            this.label31.BackColor = System.Drawing.Color.Transparent;
-            this.label31.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.White;
-            this.label31.Location = new System.Drawing.Point(93, 96);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(95, 26);
-            this.label31.TabIndex = 7;
-            this.label31.Text = "Exp Date";
+            this.label29.AutoSize = true;
+            this.label29.BackColor = System.Drawing.Color.Transparent;
+            this.label29.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.White;
+            this.label29.Location = new System.Drawing.Point(45, 20);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(199, 26);
+            this.label29.TabIndex = 5;
+            this.label29.Text = "Highest Expenditure";
             // 
             // Dashboard
             // 
@@ -842,12 +842,12 @@ namespace Dairy_Farm_Management_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            this.guna2GradientPanel2.ResumeLayout(false);
-            this.guna2GradientPanel2.PerformLayout();
-            this.guna2GradientPanel3.ResumeLayout(false);
-            this.guna2GradientPanel3.PerformLayout();
             this.guna2GradientPanel4.ResumeLayout(false);
             this.guna2GradientPanel4.PerformLayout();
+            this.guna2GradientPanel3.ResumeLayout(false);
+            this.guna2GradientPanel3.PerformLayout();
+            this.guna2GradientPanel2.ResumeLayout(false);
+            this.guna2GradientPanel2.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.guna2GradientPanel5.ResumeLayout(false);
@@ -910,7 +910,7 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label IncLbl;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label25;
