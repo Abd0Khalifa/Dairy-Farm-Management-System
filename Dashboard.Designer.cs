@@ -62,7 +62,7 @@ namespace Dairy_Farm_Management_System
             this.panel10 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.label23 = new System.Windows.Forms.Label();
+            this.BalLbl = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label11 = new System.Windows.Forms.Label();
@@ -455,7 +455,7 @@ namespace Dairy_Farm_Management_System
             // 
             this.guna2GradientPanel4.BorderRadius = 10;
             this.guna2GradientPanel4.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.guna2GradientPanel4.Controls.Add(this.label23);
+            this.guna2GradientPanel4.Controls.Add(this.BalLbl);
             this.guna2GradientPanel4.Controls.Add(this.label22);
             this.guna2GradientPanel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.guna2GradientPanel4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -464,17 +464,17 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel4.Size = new System.Drawing.Size(172, 121);
             this.guna2GradientPanel4.TabIndex = 2;
             // 
-            // label23
+            // BalLbl
             // 
-            this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.Transparent;
-            this.label23.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(65, 62);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(34, 26);
-            this.label23.TabIndex = 6;
-            this.label23.Text = "Rs";
+            this.BalLbl.AutoSize = true;
+            this.BalLbl.BackColor = System.Drawing.Color.Transparent;
+            this.BalLbl.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BalLbl.ForeColor = System.Drawing.Color.White;
+            this.BalLbl.Location = new System.Drawing.Point(65, 62);
+            this.BalLbl.Name = "BalLbl";
+            this.BalLbl.Size = new System.Drawing.Size(34, 26);
+            this.BalLbl.TabIndex = 6;
+            this.BalLbl.Text = "Rs";
             // 
             // label22
             // 
@@ -906,7 +906,7 @@ namespace Dairy_Farm_Management_System
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel8;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel9;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label BalLbl;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label ExpLbl;
