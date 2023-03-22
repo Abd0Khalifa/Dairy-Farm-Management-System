@@ -470,7 +470,7 @@ namespace Dairy_Farm_Management_System
             this.BalLbl.BackColor = System.Drawing.Color.Transparent;
             this.BalLbl.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BalLbl.ForeColor = System.Drawing.Color.White;
-            this.BalLbl.Location = new System.Drawing.Point(65, 62);
+            this.BalLbl.Location = new System.Drawing.Point(6, 62);
             this.BalLbl.Name = "BalLbl";
             this.BalLbl.Size = new System.Drawing.Size(34, 26);
             this.BalLbl.TabIndex = 6;
@@ -520,11 +520,11 @@ namespace Dairy_Farm_Management_System
             this.ExpLbl.BackColor = System.Drawing.Color.Transparent;
             this.ExpLbl.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExpLbl.ForeColor = System.Drawing.Color.White;
-            this.ExpLbl.Location = new System.Drawing.Point(67, 60);
+            this.ExpLbl.Location = new System.Drawing.Point(8, 60);
             this.ExpLbl.Name = "ExpLbl";
-            this.ExpLbl.Size = new System.Drawing.Size(34, 26);
+            this.ExpLbl.Size = new System.Drawing.Size(94, 26);
             this.ExpLbl.TabIndex = 5;
-            this.ExpLbl.Text = "Rs";
+            this.ExpLbl.Text = "Rs          ";
             // 
             // guna2GradientPanel2
             // 
@@ -545,7 +545,7 @@ namespace Dairy_Farm_Management_System
             this.IncLbl.BackColor = System.Drawing.Color.Transparent;
             this.IncLbl.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IncLbl.ForeColor = System.Drawing.Color.White;
-            this.IncLbl.Location = new System.Drawing.Point(62, 64);
+            this.IncLbl.Location = new System.Drawing.Point(8, 64);
             this.IncLbl.Name = "IncLbl";
             this.IncLbl.Size = new System.Drawing.Size(34, 26);
             this.IncLbl.TabIndex = 5;
