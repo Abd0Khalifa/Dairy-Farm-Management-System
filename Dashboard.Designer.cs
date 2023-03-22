@@ -85,8 +85,8 @@ namespace Dairy_Farm_Management_System
             this.HighAmtLbl = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.guna2GradientPanel9 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
+            this.HighExpDateLbl = new System.Windows.Forms.Label();
+            this.HighExpLbl = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -742,8 +742,8 @@ namespace Dairy_Farm_Management_System
             // 
             this.guna2GradientPanel9.BorderRadius = 10;
             this.guna2GradientPanel9.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.guna2GradientPanel9.Controls.Add(this.label31);
-            this.guna2GradientPanel9.Controls.Add(this.label30);
+            this.guna2GradientPanel9.Controls.Add(this.HighExpDateLbl);
+            this.guna2GradientPanel9.Controls.Add(this.HighExpLbl);
             this.guna2GradientPanel9.Controls.Add(this.label29);
             this.guna2GradientPanel9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.guna2GradientPanel9.FillColor2 = System.Drawing.Color.Silver;
@@ -753,29 +753,29 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel9.TabIndex = 109;
             this.guna2GradientPanel9.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2GradientPanel9_Paint);
             // 
-            // label31
+            // HighExpDateLbl
             // 
-            this.label31.AutoSize = true;
-            this.label31.BackColor = System.Drawing.Color.Transparent;
-            this.label31.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.White;
-            this.label31.Location = new System.Drawing.Point(93, 96);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(95, 26);
-            this.label31.TabIndex = 7;
-            this.label31.Text = "Exp Date";
+            this.HighExpDateLbl.AutoSize = true;
+            this.HighExpDateLbl.BackColor = System.Drawing.Color.Transparent;
+            this.HighExpDateLbl.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HighExpDateLbl.ForeColor = System.Drawing.Color.White;
+            this.HighExpDateLbl.Location = new System.Drawing.Point(93, 96);
+            this.HighExpDateLbl.Name = "HighExpDateLbl";
+            this.HighExpDateLbl.Size = new System.Drawing.Size(95, 26);
+            this.HighExpDateLbl.TabIndex = 7;
+            this.HighExpDateLbl.Text = "Exp Date";
             // 
-            // label30
+            // HighExpLbl
             // 
-            this.label30.AutoSize = true;
-            this.label30.BackColor = System.Drawing.Color.Transparent;
-            this.label30.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.Color.White;
-            this.label30.Location = new System.Drawing.Point(68, 66);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(34, 26);
-            this.label30.TabIndex = 6;
-            this.label30.Text = "Rs";
+            this.HighExpLbl.AutoSize = true;
+            this.HighExpLbl.BackColor = System.Drawing.Color.Transparent;
+            this.HighExpLbl.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HighExpLbl.ForeColor = System.Drawing.Color.White;
+            this.HighExpLbl.Location = new System.Drawing.Point(68, 66);
+            this.HighExpLbl.Name = "HighExpLbl";
+            this.HighExpLbl.Size = new System.Drawing.Size(34, 26);
+            this.HighExpLbl.TabIndex = 6;
+            this.HighExpLbl.Text = "Rs";
             // 
             // label29
             // 
@@ -912,8 +912,8 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Label HighDateLbl;
         private System.Windows.Forms.Label HighAmtLbl;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label HighExpDateLbl;
+        private System.Windows.Forms.Label HighExpLbl;
         private System.Windows.Forms.Label label29;
     }
 }
