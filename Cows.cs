@@ -86,7 +86,7 @@ namespace Dairy_Farm_Management_System
         private void SearchCow()
         {
             con.Open();
-            string query = "Select * from CowsTbl where CowName like '%" + CowSearchTb.Text + "%'";
+            string query = "Select * from CowTbl where CowName like '%" + CowSearchTb.Text + "%'";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
