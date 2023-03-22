@@ -44,8 +44,10 @@ namespace Dairy_Farm_Management_System
             this.LoginBtn = new System.Windows.Forms.Button();
             this.RoleCb = new System.Windows.Forms.ComboBox();
             this.ResetLbl = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -201,11 +203,23 @@ namespace Dairy_Farm_Management_System
             this.ResetLbl.Text = "Reset";
             this.ResetLbl.Click += new System.EventHandler(this.ResetLbl_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(595, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(27, 24);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 11;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(626, 508);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.ResetLbl);
             this.Controls.Add(this.RoleCb);
             this.Controls.Add(this.LoginBtn);
@@ -223,6 +237,7 @@ namespace Dairy_Farm_Management_System
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,5 +259,6 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox RoleCb;
         private System.Windows.Forms.Label ResetLbl;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
