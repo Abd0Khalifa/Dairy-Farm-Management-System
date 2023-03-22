@@ -20,7 +20,7 @@ namespace Dairy_Farm_Management_System
         int startppoint = 0;
         private void timer1_Tick(object sender, EventArgs e)
         {
-            startppoint += 1;
+            startppoint += 5;
             MyProgress.Value = startppoint;
             if (MyProgress.Value == 100)
             {
