@@ -84,7 +84,7 @@ namespace Dairy_Farm_Management_System
             this.button4 = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.CowSearchTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -779,25 +779,25 @@ namespace Dairy_Farm_Management_System
             this.label21.TabIndex = 33;
             this.label21.Text = "Filter";
             // 
-            // bunifuMaterialTextbox1
+            // CowSearchTb
             // 
-            this.bunifuMaterialTextbox1.BackColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(443, 340);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(8, 10, 8, 10);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(185, 47);
-            this.bunifuMaterialTextbox1.TabIndex = 34;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.CowSearchTb.BackColor = System.Drawing.Color.White;
+            this.CowSearchTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CowSearchTb.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CowSearchTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.CowSearchTb.HintForeColor = System.Drawing.Color.Empty;
+            this.CowSearchTb.HintText = "";
+            this.CowSearchTb.isPassword = false;
+            this.CowSearchTb.LineFocusedColor = System.Drawing.Color.Blue;
+            this.CowSearchTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.CowSearchTb.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.CowSearchTb.LineThickness = 3;
+            this.CowSearchTb.Location = new System.Drawing.Point(443, 340);
+            this.CowSearchTb.Margin = new System.Windows.Forms.Padding(8, 10, 8, 10);
+            this.CowSearchTb.Name = "CowSearchTb";
+            this.CowSearchTb.Size = new System.Drawing.Size(185, 47);
+            this.CowSearchTb.TabIndex = 34;
+            this.CowSearchTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // pictureBox9
             // 
@@ -816,7 +816,7 @@ namespace Dairy_Farm_Management_System
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1120, 676);
-            this.Controls.Add(this.bunifuMaterialTextbox1);
+            this.Controls.Add(this.CowSearchTb);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.button4);
@@ -933,7 +933,7 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox CowSearchTb;
         private System.Windows.Forms.PictureBox pictureBox9;
     }
 }
