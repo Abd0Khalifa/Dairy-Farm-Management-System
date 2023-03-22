@@ -73,10 +73,10 @@ namespace Dairy_Farm_Management_System
             this.panel11 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2GradientPanel5 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.label25 = new System.Windows.Forms.Label();
+            this.EmpNameLb = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.guna2GradientPanel6 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.label21 = new System.Windows.Forms.Label();
+            this.MilkLbl = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.guna2GradientPanel7 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.CownumLbl = new System.Windows.Forms.Label();
@@ -588,7 +588,7 @@ namespace Dairy_Farm_Management_System
             // 
             this.guna2GradientPanel5.BorderRadius = 10;
             this.guna2GradientPanel5.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.guna2GradientPanel5.Controls.Add(this.label25);
+            this.guna2GradientPanel5.Controls.Add(this.EmpNameLb);
             this.guna2GradientPanel5.Controls.Add(this.label24);
             this.guna2GradientPanel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.guna2GradientPanel5.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
@@ -597,17 +597,17 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel5.Size = new System.Drawing.Size(172, 121);
             this.guna2GradientPanel5.TabIndex = 2;
             // 
-            // label25
+            // EmpNameLb
             // 
-            this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(31, 64);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(109, 26);
-            this.label25.TabIndex = 6;
-            this.label25.Text = "EmpName";
+            this.EmpNameLb.AutoSize = true;
+            this.EmpNameLb.BackColor = System.Drawing.Color.Transparent;
+            this.EmpNameLb.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmpNameLb.ForeColor = System.Drawing.Color.White;
+            this.EmpNameLb.Location = new System.Drawing.Point(31, 64);
+            this.EmpNameLb.Name = "EmpNameLb";
+            this.EmpNameLb.Size = new System.Drawing.Size(109, 26);
+            this.EmpNameLb.TabIndex = 6;
+            this.EmpNameLb.Text = "EmpName";
             // 
             // label24
             // 
@@ -625,7 +625,7 @@ namespace Dairy_Farm_Management_System
             // 
             this.guna2GradientPanel6.BorderRadius = 10;
             this.guna2GradientPanel6.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.guna2GradientPanel6.Controls.Add(this.label21);
+            this.guna2GradientPanel6.Controls.Add(this.MilkLbl);
             this.guna2GradientPanel6.Controls.Add(this.label14);
             this.guna2GradientPanel6.FillColor = System.Drawing.Color.Fuchsia;
             this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -634,17 +634,17 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel6.Size = new System.Drawing.Size(172, 121);
             this.guna2GradientPanel6.TabIndex = 1;
             // 
-            // label21
+            // MilkLbl
             // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(55, 61);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(58, 26);
-            this.label21.TabIndex = 6;
-            this.label21.Text = "Num";
+            this.MilkLbl.AutoSize = true;
+            this.MilkLbl.BackColor = System.Drawing.Color.Transparent;
+            this.MilkLbl.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MilkLbl.ForeColor = System.Drawing.Color.White;
+            this.MilkLbl.Location = new System.Drawing.Point(55, 61);
+            this.MilkLbl.Name = "MilkLbl";
+            this.MilkLbl.Size = new System.Drawing.Size(58, 26);
+            this.MilkLbl.TabIndex = 6;
+            this.MilkLbl.Text = "Num";
             // 
             // label14
             // 
@@ -913,9 +913,9 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Label IncLbl;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label EmpNameLb;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label MilkLbl;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label CownumLbl;
         private System.Windows.Forms.Label label12;
