@@ -29,10 +29,12 @@ namespace Dairy_Farm_Management_System
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.bunifuProgressBar1 = new Bunifu.Framework.UI.BunifuProgressBar();
+            this.MyProgress = new Bunifu.Framework.UI.BunifuProgressBar();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,17 +59,17 @@ namespace Dairy_Farm_Management_System
             this.label1.TabIndex = 1;
             this.label1.Text = "Dairy Farm Software";
             // 
-            // bunifuProgressBar1
+            // MyProgress
             // 
-            this.bunifuProgressBar1.BackColor = System.Drawing.Color.White;
-            this.bunifuProgressBar1.BorderRadius = 5;
-            this.bunifuProgressBar1.Location = new System.Drawing.Point(2, 339);
-            this.bunifuProgressBar1.MaximumValue = 100;
-            this.bunifuProgressBar1.Name = "bunifuProgressBar1";
-            this.bunifuProgressBar1.ProgressColor = System.Drawing.Color.Teal;
-            this.bunifuProgressBar1.Size = new System.Drawing.Size(635, 10);
-            this.bunifuProgressBar1.TabIndex = 2;
-            this.bunifuProgressBar1.Value = 0;
+            this.MyProgress.BackColor = System.Drawing.Color.White;
+            this.MyProgress.BorderRadius = 5;
+            this.MyProgress.Location = new System.Drawing.Point(2, 339);
+            this.MyProgress.MaximumValue = 100;
+            this.MyProgress.Name = "MyProgress";
+            this.MyProgress.ProgressColor = System.Drawing.Color.Teal;
+            this.MyProgress.Size = new System.Drawing.Size(635, 10);
+            this.MyProgress.TabIndex = 2;
+            this.MyProgress.Value = 0;
             // 
             // Form1
             // 
@@ -75,7 +77,7 @@ namespace Dairy_Farm_Management_System
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSlateGray;
             this.ClientSize = new System.Drawing.Size(640, 351);
-            this.Controls.Add(this.bunifuProgressBar1);
+            this.Controls.Add(this.MyProgress);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -92,7 +94,8 @@ namespace Dairy_Farm_Management_System
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuProgressBar bunifuProgressBar1;
+        private Bunifu.Framework.UI.BunifuProgressBar MyProgress;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
