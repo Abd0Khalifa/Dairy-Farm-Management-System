@@ -82,13 +82,13 @@ namespace Dairy_Farm_Management_System
             DataTable dt = new DataTable();
             sda.Fill(dt);
             inc = Convert.ToInt32(dt.Rows[0][0].ToString());
-            IncLbl.Text = "Rs" + dt.Rows[0][0].ToString();
+            IncLbl.Text = "Rs " + dt.Rows[0][0].ToString();
             DataTable dt1 = new DataTable();
             sda1.Fill(dt1);
             exp = Convert.ToInt32(dt1.Rows[0][0].ToString());
-            ExpLbl.Text = "Rs" + dt1.Rows[0][0].ToString();
+            ExpLbl.Text = "Rs " + dt1.Rows[0][0].ToString();
             bal = inc - exp;
-            BalLbl.Text = "Rs" + bal;
+            BalLbl.Text = "Rs " + bal;
             con.Close();
         }
         private void Logistic()
@@ -113,9 +113,14 @@ namespace Dairy_Farm_Management_System
 
             con.Open();
             SqlDataAdapter sda = new SqlDataAdapter("select Max(IncAmt) from IncomeTbl", con);
+            SqlDataAdapter sda1 = new SqlDataAdapter("select Max(ExpAmount) from ExpenditureTbl", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
-            HighAmtLbl.Text = "Rs" + dt.Rows[0][0].ToString();
+            HighAmtLbl.Text = "Rs " + dt.Rows[0][0].ToString();
+            DataTable dt1 = new DataTable();
+            sda1.Fill(dt1);
+            HighExpLbl.Text = "Rs " + dt1.Rows[0][0].ToString();
+            con.Close();
         }
         private void panel10_Paint(object sender, PaintEventArgs e)
         {
