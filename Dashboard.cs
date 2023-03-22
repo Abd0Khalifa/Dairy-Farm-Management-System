@@ -95,12 +95,16 @@ namespace Dairy_Farm_Management_System
             con.Open();
             SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from CowTbl", con);
             SqlDataAdapter sda1 = new SqlDataAdapter("select Sum(TotalMilk) from MilkTbl", con);
+            SqlDataAdapter sda2 = new SqlDataAdapter("select Count(*) from EmployeeTbl", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             CownumLbl.Text = dt.Rows[0][0].ToString();
             DataTable dt1 = new DataTable();
             sda1.Fill(dt1);
             MilkLbl.Text = dt1.Rows[0][0].ToString() + " " + "Liters";
+            DataTable dt2 = new DataTable();
+            sda2.Fill(dt2);
+            EmpnumLbl.Text = dt2.Rows[0][0].ToString();
             con.Close();
         }
         private void panel10_Paint(object sender, PaintEventArgs e)

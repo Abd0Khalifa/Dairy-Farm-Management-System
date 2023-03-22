@@ -72,7 +72,7 @@ namespace Dairy_Farm_Management_System
             this.panel11 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2GradientPanel5 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.EmpNameLbl = new System.Windows.Forms.Label();
+            this.EmpnumLbl = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.guna2GradientPanel6 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.MilkLbl = new System.Windows.Forms.Label();
@@ -580,7 +580,7 @@ namespace Dairy_Farm_Management_System
             // 
             this.guna2GradientPanel5.BorderRadius = 10;
             this.guna2GradientPanel5.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.guna2GradientPanel5.Controls.Add(this.EmpNameLbl);
+            this.guna2GradientPanel5.Controls.Add(this.EmpnumLbl);
             this.guna2GradientPanel5.Controls.Add(this.label24);
             this.guna2GradientPanel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.guna2GradientPanel5.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
@@ -589,17 +589,17 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel5.Size = new System.Drawing.Size(172, 121);
             this.guna2GradientPanel5.TabIndex = 2;
             // 
-            // EmpNameLbl
+            // EmpnumLbl
             // 
-            this.EmpNameLbl.AutoSize = true;
-            this.EmpNameLbl.BackColor = System.Drawing.Color.Transparent;
-            this.EmpNameLbl.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmpNameLbl.ForeColor = System.Drawing.Color.White;
-            this.EmpNameLbl.Location = new System.Drawing.Point(31, 64);
-            this.EmpNameLbl.Name = "EmpNameLbl";
-            this.EmpNameLbl.Size = new System.Drawing.Size(109, 26);
-            this.EmpNameLbl.TabIndex = 6;
-            this.EmpNameLbl.Text = "EmpName";
+            this.EmpnumLbl.AutoSize = true;
+            this.EmpnumLbl.BackColor = System.Drawing.Color.Transparent;
+            this.EmpnumLbl.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmpnumLbl.ForeColor = System.Drawing.Color.White;
+            this.EmpnumLbl.Location = new System.Drawing.Point(31, 64);
+            this.EmpnumLbl.Name = "EmpnumLbl";
+            this.EmpnumLbl.Size = new System.Drawing.Size(109, 26);
+            this.EmpnumLbl.TabIndex = 6;
+            this.EmpnumLbl.Text = "EmpName";
             // 
             // label24
             // 
@@ -903,7 +903,7 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Label IncLbl;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label EmpNameLbl;
+        private System.Windows.Forms.Label EmpnumLbl;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label MilkLbl;
         private System.Windows.Forms.Label label14;
