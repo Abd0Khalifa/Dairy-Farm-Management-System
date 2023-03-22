@@ -88,6 +88,7 @@ namespace Dairy_Farm_Management_System
             this.HighExpDateLbl = new System.Windows.Forms.Label();
             this.HighExpLbl = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel8.SuspendLayout();
@@ -115,6 +116,7 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel7.SuspendLayout();
             this.guna2GradientPanel8.SuspendLayout();
             this.guna2GradientPanel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // label19
@@ -236,6 +238,7 @@ namespace Dairy_Farm_Management_System
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.LightGray;
+            this.guna2GradientPanel1.Controls.Add(this.pictureBox9);
             this.guna2GradientPanel1.Controls.Add(this.label1);
             this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2GradientPanel1.Location = new System.Drawing.Point(259, 0);
@@ -789,6 +792,17 @@ namespace Dairy_Farm_Management_System
             this.label29.TabIndex = 5;
             this.label29.Text = "Highest Expenditure";
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(831, 3);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(27, 24);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 110;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -851,6 +865,7 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel8.PerformLayout();
             this.guna2GradientPanel9.ResumeLayout(false);
             this.guna2GradientPanel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -915,5 +930,6 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Label HighExpDateLbl;
         private System.Windows.Forms.Label HighExpLbl;
         private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }
