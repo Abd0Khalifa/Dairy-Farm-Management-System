@@ -71,6 +71,10 @@ namespace Dairy_Farm_Management_System
             this.MyProgress.TabIndex = 2;
             this.MyProgress.Value = 0;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
