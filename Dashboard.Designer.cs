@@ -81,8 +81,8 @@ namespace Dairy_Farm_Management_System
             this.CownumLbl = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.guna2GradientPanel8 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
+            this.HighDateLbl = new System.Windows.Forms.Label();
+            this.HighAmtLbl = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.guna2GradientPanel9 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label31 = new System.Windows.Forms.Label();
@@ -692,8 +692,8 @@ namespace Dairy_Farm_Management_System
             // 
             this.guna2GradientPanel8.BorderRadius = 10;
             this.guna2GradientPanel8.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.guna2GradientPanel8.Controls.Add(this.label28);
-            this.guna2GradientPanel8.Controls.Add(this.label27);
+            this.guna2GradientPanel8.Controls.Add(this.HighDateLbl);
+            this.guna2GradientPanel8.Controls.Add(this.HighAmtLbl);
             this.guna2GradientPanel8.Controls.Add(this.label26);
             this.guna2GradientPanel8.FillColor = System.Drawing.Color.Red;
             this.guna2GradientPanel8.FillColor2 = System.Drawing.Color.Navy;
@@ -702,29 +702,29 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel8.Size = new System.Drawing.Size(278, 160);
             this.guna2GradientPanel8.TabIndex = 108;
             // 
-            // label28
+            // HighDateLbl
             // 
-            this.label28.AutoSize = true;
-            this.label28.BackColor = System.Drawing.Color.Transparent;
-            this.label28.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.White;
-            this.label28.Location = new System.Drawing.Point(87, 96);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(100, 26);
-            this.label28.TabIndex = 7;
-            this.label28.Text = "Sale Date";
+            this.HighDateLbl.AutoSize = true;
+            this.HighDateLbl.BackColor = System.Drawing.Color.Transparent;
+            this.HighDateLbl.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HighDateLbl.ForeColor = System.Drawing.Color.White;
+            this.HighDateLbl.Location = new System.Drawing.Point(87, 96);
+            this.HighDateLbl.Name = "HighDateLbl";
+            this.HighDateLbl.Size = new System.Drawing.Size(100, 26);
+            this.HighDateLbl.TabIndex = 7;
+            this.HighDateLbl.Text = "Sale Date";
             // 
-            // label27
+            // HighAmtLbl
             // 
-            this.label27.AutoSize = true;
-            this.label27.BackColor = System.Drawing.Color.Transparent;
-            this.label27.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(24, 64);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(34, 26);
-            this.label27.TabIndex = 6;
-            this.label27.Text = "Rs";
+            this.HighAmtLbl.AutoSize = true;
+            this.HighAmtLbl.BackColor = System.Drawing.Color.Transparent;
+            this.HighAmtLbl.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HighAmtLbl.ForeColor = System.Drawing.Color.White;
+            this.HighAmtLbl.Location = new System.Drawing.Point(24, 64);
+            this.HighAmtLbl.Name = "HighAmtLbl";
+            this.HighAmtLbl.Size = new System.Drawing.Size(34, 26);
+            this.HighAmtLbl.TabIndex = 6;
+            this.HighAmtLbl.Text = "Rs";
             // 
             // label26
             // 
@@ -909,8 +909,8 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label CownumLbl;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label HighDateLbl;
+        private System.Windows.Forms.Label HighAmtLbl;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label30;
