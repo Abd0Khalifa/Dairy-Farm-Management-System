@@ -17,6 +17,7 @@ namespace Dairy_Farm_Management_System
         {
             InitializeComponent();
             Finance();
+            Logistic();
         }
 
         private void label16_Click(object sender, EventArgs e)
