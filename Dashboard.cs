@@ -93,7 +93,7 @@ namespace Dairy_Farm_Management_System
         private void Logistic()
         {
             con.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from CowsTbl", con);
+            SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from CowTbl", con);
             SqlDataAdapter sda1 = new SqlDataAdapter("select Sum(TotalMilk) from MilkTbl", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
