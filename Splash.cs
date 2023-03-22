@@ -31,5 +31,10 @@ namespace Dairy_Farm_Management_System
                 Log.Show();
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
     }
 }
