@@ -107,6 +107,15 @@ namespace Dairy_Farm_Management_System
             EmpnumLbl.Text = dt2.Rows[0][0].ToString();
             con.Close();
         }
+        private void GetMax()
+        {
+
+            con.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("select Max(IncAmt) from IncomeTbl", con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            HighAmtLbl.Text = "Rs" + dt.Rows[0][0].ToString();
+        }
         private void panel10_Paint(object sender, PaintEventArgs e)
         {
 
