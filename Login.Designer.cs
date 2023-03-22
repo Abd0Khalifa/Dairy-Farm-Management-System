@@ -31,6 +31,10 @@ namespace Dairy_Farm_Management_System
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,12 +42,8 @@ namespace Dairy_Farm_Management_System
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.RoleCb = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -60,6 +60,50 @@ namespace Dairy_Farm_Management_System
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(266, 508);
             this.panel1.TabIndex = 0;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe Print", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(12, 466);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(243, 23);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Created by \"Abdulrahman Khalifa\"";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe Print", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(50, 203);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(159, 33);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "-Echo Friendly";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe Print", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(50, 248);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(171, 33);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "-Professionalism";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe Print", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(50, 162);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(143, 33);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "-Nice Quality";
             // 
             // label1
             // 
@@ -132,18 +176,18 @@ namespace Dairy_Farm_Management_System
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // comboBox1
+            // RoleCb
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe Print", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.RoleCb.Font = new System.Drawing.Font("Segoe Print", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RoleCb.FormattingEnabled = true;
+            this.RoleCb.Items.AddRange(new object[] {
             "Admin",
             "Employee"});
-            this.comboBox1.Location = new System.Drawing.Point(352, 177);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(196, 41);
-            this.comboBox1.TabIndex = 9;
-            this.comboBox1.Text = "Select Role";
+            this.RoleCb.Location = new System.Drawing.Point(352, 177);
+            this.RoleCb.Name = "RoleCb";
+            this.RoleCb.Size = new System.Drawing.Size(196, 41);
+            this.RoleCb.TabIndex = 9;
+            this.RoleCb.Text = "Select Role";
             // 
             // label4
             // 
@@ -155,57 +199,13 @@ namespace Dairy_Farm_Management_System
             this.label4.TabIndex = 10;
             this.label4.Text = "Reset";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe Print", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(50, 162);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(143, 33);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "-Nice Quality";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe Print", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(50, 248);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(171, 33);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "-Professionalism";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe Print", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(50, 203);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(159, 33);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "-Echo Friendly";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe Print", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(12, 466);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(243, 23);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Created by \"Abdulrahman Khalifa\"";
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(626, 508);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.RoleCb);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -240,7 +240,7 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox RoleCb;
         private System.Windows.Forms.Label label4;
     }
 }
