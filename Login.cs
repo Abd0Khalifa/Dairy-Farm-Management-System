@@ -26,6 +26,16 @@ namespace Dairy_Farm_Management_System
             {
                 MessageBox.Show("Enter UserName And Password");
             }
+            else
+            {
+                if (RoleCb.SelectedIndex > -1)
+                {
+                    if (RoleCb.SelectedItem.ToString() == "Admin")
+                    {
+
+                    }
+                }
+            }
 
         }
 
