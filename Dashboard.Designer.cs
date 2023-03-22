@@ -720,7 +720,7 @@ namespace Dairy_Farm_Management_System
             this.HighAmtLbl.BackColor = System.Drawing.Color.Transparent;
             this.HighAmtLbl.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HighAmtLbl.ForeColor = System.Drawing.Color.White;
-            this.HighAmtLbl.Location = new System.Drawing.Point(24, 64);
+            this.HighAmtLbl.Location = new System.Drawing.Point(69, 64);
             this.HighAmtLbl.Name = "HighAmtLbl";
             this.HighAmtLbl.Size = new System.Drawing.Size(34, 26);
             this.HighAmtLbl.TabIndex = 6;
@@ -771,7 +771,7 @@ namespace Dairy_Farm_Management_System
             this.label30.BackColor = System.Drawing.Color.Transparent;
             this.label30.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.Color.White;
-            this.label30.Location = new System.Drawing.Point(17, 66);
+            this.label30.Location = new System.Drawing.Point(68, 66);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(34, 26);
             this.label30.TabIndex = 6;
