@@ -41,9 +41,9 @@ namespace Dairy_Farm_Management_System
             this.label3 = new System.Windows.Forms.Label();
             this.UnameTb = new System.Windows.Forms.TextBox();
             this.PasswordTb = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.LoginBtn = new System.Windows.Forms.Button();
             this.RoleCb = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.ResetLbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -162,19 +162,19 @@ namespace Dairy_Farm_Management_System
             this.PasswordTb.Size = new System.Drawing.Size(214, 41);
             this.PasswordTb.TabIndex = 7;
             // 
-            // button1
+            // LoginBtn
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(352, 407);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(196, 47);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.LoginBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.LoginBtn.FlatAppearance.BorderSize = 0;
+            this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LoginBtn.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginBtn.Location = new System.Drawing.Point(352, 407);
+            this.LoginBtn.Name = "LoginBtn";
+            this.LoginBtn.Size = new System.Drawing.Size(196, 47);
+            this.LoginBtn.TabIndex = 8;
+            this.LoginBtn.Text = "Login";
+            this.LoginBtn.UseVisualStyleBackColor = false;
+            this.LoginBtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // RoleCb
             // 
@@ -189,24 +189,24 @@ namespace Dairy_Farm_Management_System
             this.RoleCb.TabIndex = 9;
             this.RoleCb.Text = "Select Role";
             // 
-            // label4
+            // ResetLbl
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe Print", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(417, 457);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 33);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Reset";
+            this.ResetLbl.AutoSize = true;
+            this.ResetLbl.Font = new System.Drawing.Font("Segoe Print", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ResetLbl.Location = new System.Drawing.Point(417, 457);
+            this.ResetLbl.Name = "ResetLbl";
+            this.ResetLbl.Size = new System.Drawing.Size(66, 33);
+            this.ResetLbl.TabIndex = 10;
+            this.ResetLbl.Text = "Reset";
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(626, 508);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.ResetLbl);
             this.Controls.Add(this.RoleCb);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.LoginBtn);
             this.Controls.Add(this.PasswordTb);
             this.Controls.Add(this.UnameTb);
             this.Controls.Add(this.label3);
@@ -235,12 +235,12 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox UnameTb;
         private System.Windows.Forms.TextBox PasswordTb;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button LoginBtn;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox RoleCb;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label ResetLbl;
     }
 }
