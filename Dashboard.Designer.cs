@@ -79,7 +79,7 @@ namespace Dairy_Farm_Management_System
             this.label21 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.guna2GradientPanel7 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.label13 = new System.Windows.Forms.Label();
+            this.CownumLbl = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.guna2GradientPanel8 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label28 = new System.Windows.Forms.Label();
@@ -663,7 +663,7 @@ namespace Dairy_Farm_Management_System
             // 
             this.guna2GradientPanel7.BorderRadius = 10;
             this.guna2GradientPanel7.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.guna2GradientPanel7.Controls.Add(this.label13);
+            this.guna2GradientPanel7.Controls.Add(this.CownumLbl);
             this.guna2GradientPanel7.Controls.Add(this.label12);
             this.guna2GradientPanel7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.guna2GradientPanel7.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
@@ -672,17 +672,17 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel7.Size = new System.Drawing.Size(172, 121);
             this.guna2GradientPanel7.TabIndex = 0;
             // 
-            // label13
+            // CownumLbl
             // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(58, 64);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(58, 26);
-            this.label13.TabIndex = 6;
-            this.label13.Text = "Num";
+            this.CownumLbl.AutoSize = true;
+            this.CownumLbl.BackColor = System.Drawing.Color.Transparent;
+            this.CownumLbl.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CownumLbl.ForeColor = System.Drawing.Color.White;
+            this.CownumLbl.Location = new System.Drawing.Point(58, 64);
+            this.CownumLbl.Name = "CownumLbl";
+            this.CownumLbl.Size = new System.Drawing.Size(58, 26);
+            this.CownumLbl.TabIndex = 6;
+            this.CownumLbl.Text = "Num";
             // 
             // label12
             // 
@@ -917,7 +917,7 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label CownumLbl;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
