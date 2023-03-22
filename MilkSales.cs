@@ -166,5 +166,10 @@ namespace Dairy_Farm_Management_System
         {
             Clear();
         }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
