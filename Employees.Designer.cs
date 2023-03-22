@@ -30,9 +30,9 @@ namespace Dairy_Farm_Management_System
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employees));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -56,6 +56,8 @@ namespace Dairy_Farm_Management_System
             this.label2 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.EmpPassTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
@@ -139,26 +141,26 @@ namespace Dairy_Farm_Management_System
             // 
             // EmployeeDGV
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.EmployeeDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.EmployeeDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.EmployeeDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.EmployeeDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.EmployeeDGV.ColumnHeadersHeight = 4;
             this.EmployeeDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.EmployeeDGV.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.EmployeeDGV.DefaultCellStyle = dataGridViewCellStyle3;
             this.EmployeeDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.EmployeeDGV.Location = new System.Drawing.Point(298, 372);
             this.EmployeeDGV.Name = "EmployeeDGV";
@@ -274,7 +276,7 @@ namespace Dairy_Farm_Management_System
             this.AddressTb.LineIdleColor = System.Drawing.Color.Gray;
             this.AddressTb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.AddressTb.LineThickness = 3;
-            this.AddressTb.Location = new System.Drawing.Point(751, 210);
+            this.AddressTb.Location = new System.Drawing.Point(612, 210);
             this.AddressTb.Margin = new System.Windows.Forms.Padding(8, 10, 8, 10);
             this.AddressTb.Name = "AddressTb";
             this.AddressTb.Size = new System.Drawing.Size(185, 47);
@@ -300,7 +302,7 @@ namespace Dairy_Farm_Management_System
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe Print", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(745, 178);
+            this.label4.Location = new System.Drawing.Point(606, 178);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(92, 33);
             this.label4.TabIndex = 89;
@@ -319,7 +321,7 @@ namespace Dairy_Farm_Management_System
             this.PhoneTb.LineIdleColor = System.Drawing.Color.Gray;
             this.PhoneTb.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.PhoneTb.LineThickness = 3;
-            this.PhoneTb.Location = new System.Drawing.Point(468, 210);
+            this.PhoneTb.Location = new System.Drawing.Point(406, 210);
             this.PhoneTb.Margin = new System.Windows.Forms.Padding(8, 10, 8, 10);
             this.PhoneTb.Name = "PhoneTb";
             this.PhoneTb.Size = new System.Drawing.Size(185, 47);
@@ -374,7 +376,7 @@ namespace Dairy_Farm_Management_System
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe Print", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(463, 178);
+            this.label9.Location = new System.Drawing.Point(401, 178);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(74, 33);
             this.label9.TabIndex = 90;
@@ -392,11 +394,44 @@ namespace Dairy_Farm_Management_System
             this.label13.TabIndex = 109;
             this.label13.Text = "DOB";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe Print", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(808, 178);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(106, 33);
+            this.label5.TabIndex = 110;
+            this.label5.Text = "Password";
+            // 
+            // EmpPassTb
+            // 
+            this.EmpPassTb.BackColor = System.Drawing.Color.White;
+            this.EmpPassTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.EmpPassTb.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmpPassTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.EmpPassTb.HintForeColor = System.Drawing.Color.Empty;
+            this.EmpPassTb.HintText = "";
+            this.EmpPassTb.isPassword = false;
+            this.EmpPassTb.LineFocusedColor = System.Drawing.Color.Blue;
+            this.EmpPassTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.EmpPassTb.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.EmpPassTb.LineThickness = 3;
+            this.EmpPassTb.Location = new System.Drawing.Point(814, 210);
+            this.EmpPassTb.Margin = new System.Windows.Forms.Padding(8, 10, 8, 10);
+            this.EmpPassTb.Name = "EmpPassTb";
+            this.EmpPassTb.Size = new System.Drawing.Size(185, 47);
+            this.EmpPassTb.TabIndex = 111;
+            this.EmpPassTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // Employees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1120, 676);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.EmpPassTb);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label2);
@@ -456,5 +491,7 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label5;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox EmpPassTb;
     }
 }
