@@ -230,5 +230,10 @@ namespace Dairy_Farm_Management_System
         {
             Application.Exit();
         }
+
+        private void CowSearchTb_OnValueChanged(object sender, EventArgs e)
+        {
+            SearchCow();
+        }
     }
 }
