@@ -75,7 +75,8 @@ namespace Dairy_Farm_Management_System
             GenCb.SelectedItem = EmployeeDGV.SelectedRows[0].Cells[3].Value.ToString();
             PhoneTb.Text = EmployeeDGV.SelectedRows[0].Cells[4].Value.ToString();
             AddressTb.Text = EmployeeDGV.SelectedRows[0].Cells[5].Value.ToString();
-            
+            EmpPassTb.Text = EmployeeDGV.SelectedRows[0].Cells[6].Value.ToString();
+
             if (EmpNameTb.Text == "")
             {
                 key = 0;
