@@ -16,7 +16,7 @@ namespace Dairy_Farm_Management_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Dashboard());
+            Application.Run(new Form1());
         }
     }
 }
