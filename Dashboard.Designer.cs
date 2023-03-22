@@ -58,7 +58,6 @@ namespace Dairy_Farm_Management_System
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -421,13 +420,6 @@ namespace Dairy_Farm_Management_System
             this.label20.TabIndex = 104;
             this.label20.Text = "Dashboard";
             // 
-            // panel9
-            // 
-            this.panel9.Location = new System.Drawing.Point(0, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(200, 100);
-            this.panel9.TabIndex = 105;
-            // 
             // panel10
             // 
             this.panel10.Controls.Add(this.label2);
@@ -470,7 +462,7 @@ namespace Dairy_Farm_Management_System
             this.BalLbl.BackColor = System.Drawing.Color.Transparent;
             this.BalLbl.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BalLbl.ForeColor = System.Drawing.Color.White;
-            this.BalLbl.Location = new System.Drawing.Point(6, 62);
+            this.BalLbl.Location = new System.Drawing.Point(43, 62);
             this.BalLbl.Name = "BalLbl";
             this.BalLbl.Size = new System.Drawing.Size(34, 26);
             this.BalLbl.TabIndex = 6;
@@ -520,11 +512,11 @@ namespace Dairy_Farm_Management_System
             this.ExpLbl.BackColor = System.Drawing.Color.Transparent;
             this.ExpLbl.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExpLbl.ForeColor = System.Drawing.Color.White;
-            this.ExpLbl.Location = new System.Drawing.Point(8, 60);
+            this.ExpLbl.Location = new System.Drawing.Point(36, 60);
             this.ExpLbl.Name = "ExpLbl";
-            this.ExpLbl.Size = new System.Drawing.Size(94, 26);
+            this.ExpLbl.Size = new System.Drawing.Size(34, 26);
             this.ExpLbl.TabIndex = 5;
-            this.ExpLbl.Text = "Rs          ";
+            this.ExpLbl.Text = "Rs";
             // 
             // guna2GradientPanel2
             // 
@@ -545,7 +537,7 @@ namespace Dairy_Farm_Management_System
             this.IncLbl.BackColor = System.Drawing.Color.Transparent;
             this.IncLbl.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IncLbl.ForeColor = System.Drawing.Color.White;
-            this.IncLbl.Location = new System.Drawing.Point(8, 64);
+            this.IncLbl.Location = new System.Drawing.Point(38, 64);
             this.IncLbl.Name = "IncLbl";
             this.IncLbl.Size = new System.Drawing.Size(34, 26);
             this.IncLbl.TabIndex = 5;
@@ -640,7 +632,7 @@ namespace Dairy_Farm_Management_System
             this.MilkLbl.BackColor = System.Drawing.Color.Transparent;
             this.MilkLbl.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MilkLbl.ForeColor = System.Drawing.Color.White;
-            this.MilkLbl.Location = new System.Drawing.Point(55, 61);
+            this.MilkLbl.Location = new System.Drawing.Point(33, 61);
             this.MilkLbl.Name = "MilkLbl";
             this.MilkLbl.Size = new System.Drawing.Size(58, 26);
             this.MilkLbl.TabIndex = 6;
@@ -678,7 +670,7 @@ namespace Dairy_Farm_Management_System
             this.CownumLbl.BackColor = System.Drawing.Color.Transparent;
             this.CownumLbl.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CownumLbl.ForeColor = System.Drawing.Color.White;
-            this.CownumLbl.Location = new System.Drawing.Point(58, 64);
+            this.CownumLbl.Location = new System.Drawing.Point(67, 64);
             this.CownumLbl.Name = "CownumLbl";
             this.CownumLbl.Size = new System.Drawing.Size(58, 26);
             this.CownumLbl.TabIndex = 6;
@@ -806,7 +798,6 @@ namespace Dairy_Farm_Management_System
             this.Controls.Add(this.guna2GradientPanel8);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel10);
-            this.Controls.Add(this.panel9);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label20);
@@ -894,7 +885,6 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel10;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel4;
