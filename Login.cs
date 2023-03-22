@@ -51,7 +51,10 @@ namespace Dairy_Farm_Management_System
                         sda.Fill(dt);
                         if (dt.Rows[0][0].ToString() == "1")
                         {
-
+                            Cows cow = new Cows();
+                            cow.Show();
+                            this.Hide();
+                            con.Close();
                         }
                     }
                 }
