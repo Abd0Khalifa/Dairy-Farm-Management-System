@@ -159,6 +159,7 @@ namespace Dairy_Farm_Management_System
             this.PasswordTb.Font = new System.Drawing.Font("Segoe Print", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordTb.Location = new System.Drawing.Point(400, 319);
             this.PasswordTb.Name = "PasswordTb";
+            this.PasswordTb.PasswordChar = '*';
             this.PasswordTb.Size = new System.Drawing.Size(214, 41);
             this.PasswordTb.TabIndex = 7;
             // 
@@ -198,6 +199,7 @@ namespace Dairy_Farm_Management_System
             this.ResetLbl.Size = new System.Drawing.Size(66, 33);
             this.ResetLbl.TabIndex = 10;
             this.ResetLbl.Text = "Reset";
+            this.ResetLbl.Click += new System.EventHandler(this.ResetLbl_Click);
             // 
             // Login
             // 
